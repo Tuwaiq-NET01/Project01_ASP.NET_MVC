@@ -24,7 +24,7 @@
 ## Demo
 
 <p align="center">
-  <img alt="Demo" src="https://raw.githubusercontent.com/YounesAlturkey/react-movieslist/main/demo.png">
+  <img alt="Demo" src="https://raw.githubusercontent.com/YounesAlturkey/Project01_ASP.NET_MVC/main/frontend/public/demo.png">
 </p>
 
 <div align="right">
