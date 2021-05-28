@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var Image = ViewData["homeBar"];
+}
+
+<h1 class="text-center start-text">Neatly. Delightedly. Quietly</h1>
+<br />
+<div class="row justify-content-md-center">
+    <button type="button" class="btn start">Start Shopping</button>
+</div>
+<img class="menu" src="@Url.Content("~/img/backHome.png")" multiple />
+
+<div id="homeBar" style="height: 700px;"></div>
+<div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h3 class="text-center" id="About">About Us</h3>
+        <div class="row">
+            <div class="col box">
+                <p>
+                    Quickly search and add
+                    healthy foods to your cart
+                </p>
+                <p>
+                    Mahsolk Direct provides you with a full and varied list of groceries and home essentials neatly classified to shop with your fingertips.
+                </p>
+            </div>
+            <div class="col-md-auto">
+                <img height="350" width="350" src="@Url.Content("~/img/Cart.PNG ")" multiple />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <img height="350" width="350" src="@Url.Content("~/img/mobile.PNG")" multiple />
+            </div>
+            <div class="col box">
+                <p>
+                    With one click you can add every ingredient for a recipe to your cart
+                </p>
+            </div>
+        </div>
+        <div class="container contact-form">
+            <form method="post">
+                <h3 id="Contact">Drop Us a Message</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
