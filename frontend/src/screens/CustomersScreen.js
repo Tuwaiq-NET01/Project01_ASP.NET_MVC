@@ -42,7 +42,40 @@ const useStyles = makeStyles((theme) => ({
 
 const CustomersScreen = () => {
   const classes = useStyles()
-  const [customers, setCustomers] = useState([])
+  const [customers, setCustomers] = useState([
+    {
+      id: 1,
+      firstName: 'Younes',
+      lastName: 'Alturkey',
+      address: 'Jeddah, SA',
+      email: 'younes.alturkey@tuwaiq.edu.sa',
+      phone: '+966538654514',
+    },
+    {
+      id: 2,
+      firstName: 'Fai',
+      lastName: 'Alotaibi',
+      address: 'London, SA',
+      email: 'fai-alotaibi@tuwaiq.edu.sa',
+      phone: '+966554586532',
+    },
+    {
+      id: 3,
+      firstName: 'Kayle',
+      lastName: 'Johnson',
+      address: 'Los Angeles, USA',
+      email: 'kayle-johnson@tuwaiq.edu.sa',
+      phone: '+966543265125',
+    },
+    {
+      id: 4,
+      firstName: 'Nice',
+      lastName: 'Curb',
+      address: 'NYC, India',
+      email: 'nice-curb@tuwaiq.edu.sa',
+      phone: '+966555658545',
+    },
+  ])
 
   useEffect(() => {
     //FETCH all customers from the database
@@ -62,7 +95,9 @@ const CustomersScreen = () => {
           })
         })
 
-        setCustomers(customersArray)
+        if (customersArray.length >= 1) {
+          setCustomers(customersArray)
+        }
       })
       .catch(function (error) {
         console.log(error)

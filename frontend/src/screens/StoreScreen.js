@@ -41,7 +41,57 @@ const useStyles = makeStyles((theme) => ({
 
 const StoreScreen = () => {
   const classes = useStyles()
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([
+    {
+      id: 74256,
+      name: 'Monkey D Luffy Paramount War',
+      price: 615.0,
+      image:
+        'https://images-na.ssl-images-amazon.com/images/I/71saELHU3DL._AC_SL1500_.jpg',
+    },
+    {
+      id: 32354,
+      name: 'One Piece Brotherhood',
+      price: 159.35,
+      image:
+        'https://images-na.ssl-images-amazon.com/images/I/51verxrxP0L._AC_.jpg',
+    },
+    {
+      id: 11254,
+      name: 'Modern Long Sword',
+      price: 189.88,
+      image:
+        'https://images-na.ssl-images-amazon.com/images/I/61N09EdUW7L._AC_SL1000_.jpg',
+    },
+    {
+      id: 48565,
+      name: 'Samsung Galaxy M11',
+      price: 425.0,
+      image:
+        'https://images-na.ssl-images-amazon.com/images/I/714OQELGz%2BL._AC_SL1500_.jpg',
+    },
+    {
+      id: 65235,
+      name: 'Innoo Tech PS4',
+      price: 102.38,
+      image:
+        'https://images-na.ssl-images-amazon.com/images/I/61fUK-MiHNL._AC_SL1000_.jpg',
+    },
+    {
+      id: 41235,
+      name: 'Namco Tekken 7',
+      price: 79.99,
+      image:
+        'https://images-na.ssl-images-amazon.com/images/I/81tk896p%2BVL._AC_SL1500_.jpg',
+    },
+    {
+      id: 69696,
+      name: 'Jaguar Classic Black',
+      price: 48.7,
+      image:
+        'https://images-na.ssl-images-amazon.com/images/I/51T4ovuKu-L._AC_SL1091_.jpg',
+    },
+  ])
 
   useEffect(() => {
     //FETCH all products from the database
@@ -59,7 +109,9 @@ const StoreScreen = () => {
           })
         })
 
-        setProducts(productsArray)
+        if (productsArray.length >= 1) {
+          setProducts(productsArray)
+        }
       })
       .catch(function (error) {
         console.log(error)

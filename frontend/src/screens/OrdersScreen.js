@@ -41,7 +41,33 @@ const useStyles = makeStyles((theme) => ({
 
 const OrderScreen = () => {
   const classes = useStyles()
-  const [orders, setorders] = useState([])
+  const [orders, setorders] = useState([
+    {
+      id: 1,
+      orderPlaced: '2021-05-27',
+      customerId: 2,
+    },
+    {
+      id: 2,
+      orderPlaced: '2021-03-12',
+      customerId: 2,
+    },
+    {
+      id: 3,
+      orderPlaced: '2021-06-03',
+      customerId: 1,
+    },
+    {
+      id: 4,
+      orderPlaced: '2021-04-23',
+      customerId: 3,
+    },
+    {
+      id: 5,
+      orderPlaced: '2019-05-27',
+      customerId: 5,
+    },
+  ])
 
   useEffect(() => {
     //FETCH all orders from the database
@@ -58,7 +84,9 @@ const OrderScreen = () => {
           })
         })
 
-        setorders(ordersArray)
+        if (ordersArray.length >= 1) {
+          setorders(ordersArray)
+        }
       })
       .catch(function (error) {
         console.log(error)
