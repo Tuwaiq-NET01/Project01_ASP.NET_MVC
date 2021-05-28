@@ -9,7 +9,6 @@ namespace Project01_ASP.NET_MVC.Controllers
 {
     public class AuthorsController : Controller
     {
-        public static Author asd = new Author() { Id = 1, FullName = "Michael", Email = "Michael@example.com", Phone = "645-123-4353" };
 
         private List<Author> authors = new List<Author>()
             {
