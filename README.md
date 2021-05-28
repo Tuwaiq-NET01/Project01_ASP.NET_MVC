@@ -1,6 +1,10 @@
 # Rick and Morty
 Simple web app to view Rick and Morty's characters and episodes information
 
+### Live Link
+https://itsrickandmorty.azurewebsites.net/
+
+### Demo
 <img src='demo.gif' width='800'/>
 
 ### Built using
