@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "_myLayout";
+
+    ViewData["Title"] = "Home Page";
+    System.Diagnostics.Debug.WriteLine("This will be displayed in output window");
+    var jresults = (string)ViewData["jresults"];
+    System.Diagnostics.Debug.WriteLine("Thisssssssssss "+ jresults);
+}
+
+<h4>api test</h4>
+
+<p>@*@jresults.a*@</p>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

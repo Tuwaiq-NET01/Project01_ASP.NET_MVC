@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Project01_ASP.NET_MVC.Models.Book>
+
+@{
+    var allBooks = (List<Book>)ViewData["allBooks"];
+    Layout = "_myLayout";
+}
+
+@foreach (var book in allBooks)
+{
+    <p>@book.Id </p>
+    <p>@book.name </p>
+    <p>@book.price</p>
+    <a href="authors/detail/@book.author.Id"> @book.author.FullName </a>
+    <hr />
+}
+
+
+<h1>
+    hii
+</h1>
+
