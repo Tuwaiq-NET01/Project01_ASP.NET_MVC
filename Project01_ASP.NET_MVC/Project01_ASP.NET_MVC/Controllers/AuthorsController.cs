@@ -25,8 +25,7 @@ namespace Project01_ASP.NET_MVC.Controllers
 
         public IActionResult Index()
         {
-            TempData["mydata"] = authors;
-            return RedirectToAction("Index", "BooksController");
+            //TempData["mydata"] = authors;
             return View();
         }
 
