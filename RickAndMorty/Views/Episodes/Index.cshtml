@@ -1,0 +1,27 @@
+﻿@page
+@model RickAndMorty.Views.Episodes.IndexModel
+@{
+    List<EpisodeModel> episodes = (List<EpisodeModel>)ViewBag.Episodes;
+}
+
+<div class="container">
+    <div class="row">
+        @foreach (var episode in episodes)
+        {
+            <div class="card mt-3 mr-3 characterCard" style="width: 20rem">
+                <div class="row">
+                    <div class="col-3 d-flex align-items-center justify-content-center" >
+                        <h6 class="text-dark bg-warning p-3 ml-2">@episode.Episode_Code </h6>
+                    </div>
+                    <div class="col-9">
+                        <div class="card-body flex-row">
+                            <h5 class="card-title font-weight-bold pb-2">@episode.Name</h5>
+                            <p class="card-text">@episode.Air_date</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@page
+@model RickAndMorty.Views.Characters.InfoModel
+@{
+    CharacterModel character = (CharacterModel) ViewBag.Character;
+}
+
+<div class="card mt-3 mr-2 characterCard img-fluid" >
+    <div class="row">
+        <div class="col">
+            <img class="card-img-top img-fluid" src=@character.Image alt="Card image cap" />
+        </div>
+        <div class="col">
+            <div class="card-body">
+                <h2 class="card-title font-weight-bold pb-3">@character.Name @(character.Gender == "Male" ? "♂️":"♀")</h2>
+                <h3>@character.Status | @character.Species</h3>
+                <p class="card-text pt-4">Origin: @character.Origin</p>
+                <p class="card-text">Episodes: @character.Episodes</p>
+            </div>
+        </div>
+    </div>
+</div>

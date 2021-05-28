@@ -1,3 +1,16 @@
+# Rick and Morty
+Simple web app to view Rick and Morty's characters and episodes information
+
+<img src='demo.gif' width='800'/>
+
+### Built using
+- 2 Controllers 
+- 2 Models
+- 5 Views
+- Bootstrap
+- [Rick and Morty API](rickandmortyapi.com) to featch the episodes data
+
+
 # Project01_ASP.NET_MVC
 
 
