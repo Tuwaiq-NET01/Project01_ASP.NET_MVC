@@ -14,7 +14,7 @@
     @foreach (var book in allBooks)
     {
 
-        <div class="col-3 mb-5">
+        <div class="col-md-3 mb-5">
 
             <div class="card bg-light text-dark">
 
@@ -29,8 +29,8 @@
                     <b>Author: <a href="/authors/detail/@book.author.Id"> @book.author.FullName </a> </b>
                     <p class="card-text text-right price-tag">$@book.price</p>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary ">
-                            BUY
+                        <a href="/books/detail/@book.Id" class="btn btn-primary ">
+                            More Info
                         </a>
                     </div>
                 </div>

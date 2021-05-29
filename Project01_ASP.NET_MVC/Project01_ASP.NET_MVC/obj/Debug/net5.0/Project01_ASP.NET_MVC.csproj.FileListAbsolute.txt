@@ -150,3 +150,5 @@ D:\Tuwaiq\dotNET\projects\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\Project01_
 D:\Tuwaiq\dotNET\projects\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\obj\Debug\net5.0\Razor\Views\Authors\Index.cshtml.g.cs
 D:\Tuwaiq\dotNET\projects\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\obj\Debug\net5.0\Razor\Views\Authors\Detail.cshtml.g.cs
 D:\Tuwaiq\dotNET\projects\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\obj\Debug\net5.0\Razor\Views\Books\Detail.cshtml.g.cs
+D:\Tuwaiq\dotNET\projects\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+D:\Tuwaiq\dotNET\projects\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\Project01_ASP.NET_MVC\obj\Debug\net5.0\Razor\Views\Shared\fof.cshtml.g.cs

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Linq;
 using Project01_ASP.NET_MVC.Models;
 using System;
 using System.Collections.Generic;
@@ -20,10 +21,21 @@ namespace Project01_ASP.NET_MVC.Controllers
 
         public IActionResult Index()
         {
+            dynamic stuff = JObject.Parse("{ 'Name': 'Jon Smith', 'Address': { 'City': 'New York', 'State': 'NY' }, 'Age': 42 }");
+
+            string name = stuff.Name;
+            string address = stuff.Address.City;
+
+            ViewData["namee"] = name;
             return View();
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult About()
         {
             return View();
         }

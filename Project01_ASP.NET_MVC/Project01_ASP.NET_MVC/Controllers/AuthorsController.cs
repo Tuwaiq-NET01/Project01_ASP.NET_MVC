@@ -24,7 +24,7 @@ namespace Project01_ASP.NET_MVC.Controllers
 
         public IActionResult Index()
         {
-            //TempData["mydata"] = authors;
+            ViewData["allAuthors"] = authors;
             return View();
         }
 
@@ -32,6 +32,13 @@ namespace Project01_ASP.NET_MVC.Controllers
         {
             
             ViewData["author"] = authors.Find(aut => aut.Id == id);
+
+
+            if (ViewData["author"] == null)
+            {
+                return View("fof");
+            }
+
 
             return View();
         }

@@ -1,17 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Project01_ASP.NET_MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Project01_ASP.NET_MVC.Models;
-
 
 namespace Project01_ASP.NET_MVC.Controllers
 {
     public class BooksController : Controller
     {
-
         private static List<Author> authors = new List<Author>()
             {
                 new Author(){Id = 1 , FullName = "Michael" , Email = "Michael@example.com" , Phone = "645-123-4353"},
@@ -22,7 +19,6 @@ namespace Project01_ASP.NET_MVC.Controllers
                 new Author(){Id = 6 , FullName = "John" , Email = "John@example.com" , Phone = "878-123-4353"},
                 new Author(){Id = 7 , FullName = "Kevin" , Email = "Kevin@example.com" , Phone = "567-123-4353"},
             };
-
         private List<Book> books = new List<Book>()
             {
                 new Book(){Id = 1 , name = "XV6 Operating System" , author = authors[1], price = 75, image ="https://lh3.googleusercontent.com/proxy/q1Tsqo23IkdoihHnE4Z1SwdFpiZcv8fqUUGtq4t5Oe9vFSJP-3MaBijQrsClm4wUF_oNiermdqrhzwWtL3lyW2XrEU7_fSjg_BaTJ2-U6ioG4bCsLeo"},
@@ -40,80 +36,29 @@ namespace Project01_ASP.NET_MVC.Controllers
             };
 
 
-        // GET: BooksController
-        public ActionResult Index()
+
+        public IActionResult Index()
         {
             ViewData["allBooks"] = books;
+
             return View();
         }
 
-        // GET: BooksController/Details/5
-        public ActionResult Details(int id)
+        public IActionResult Detail(int id = 1)
         {
+            ViewData["book"] = books.Find(b => b.Id == id);
+
+            if (ViewData["book"] == null)
+            {
+                //return Content("not found");
+                return View("fof");
+            }
+
             return View();
         }
 
-        // GET: BooksController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
-        // POST: BooksController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
 
-        // GET: BooksController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
 
-        // POST: BooksController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: BooksController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: BooksController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

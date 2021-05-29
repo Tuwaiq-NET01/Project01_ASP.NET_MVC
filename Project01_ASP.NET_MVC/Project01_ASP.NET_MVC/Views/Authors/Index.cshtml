@@ -1,9 +1,14 @@
-﻿@page
-@model Project01_ASP.NET_MVC.Views.Authors.IndexModel
-@{
+﻿@{
+
+    Layout = "_myLayout";
+    var allAuthors = (List<Author>)ViewData["allAuthors"];
 
 
 }
 
 
-<h1>hiiiii</h1>
+@foreach(var auth in allAuthors)
+            {
+
+    <h5> @auth.Id. @auth.FullName</h5>
+            }
