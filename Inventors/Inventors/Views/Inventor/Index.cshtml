@@ -13,11 +13,11 @@
             <img class="card-img-top" src="@inventor.Image" alt="Card image cap" >
             <div class="card-body">
                 <h5 class="card-title">@inventor.Name</h5>
-                <p class="card-text">Bitrht Date: @inventor.BirthDate</p>
-                <p class="card-text">Death Date: @inventor.DeathDate</p>
+                <p class="card-text">Bitrht Date: @inventor.BirthDate.Date</p>
+                <p class="card-text">Death Date: @inventor.DeathDate.Date</p>
                 <p class="card-text">Nationality: @inventor.Nationality</p>
                 @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
-                <a href="Inventors/Details/?id=@inventor.Id">Read More</a>
+                <a href="Inventor/Details/?id=@inventor.Id">Read More</a>
             </div>
         </div> 
     }

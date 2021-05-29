@@ -2,7 +2,41 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div @*class="text-center"*@>
+    <h5 class="display-4 ">Welcome!</h5>
+    <hr>
+    <p id="main">
+        Fascinated with inventions stories? This is the place for you!
+    </p>
+
+    <blockquote class="blockquote">
+        <p class="mb-0" id="qoute">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer" id="footer">Someone famous</footer>
+    </blockquote>
+
+    <script type="text/javascript">
+    fetch("https://type.fit/api/quotes")
+    .then(function(response) {
+    return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+        showQoute(data);
+    });
+        showQoute = qoutes => {
+            const qoutePElement = document.querySelector('#qoute');
+            const footerElement = document.querySelector('#footer');
+            var randomQoute = qoutes[Math.floor(Math.random() * qoutes.length)];
+            qoutePElement.innerText = `${randomQoute.text}`;
+            footerElement.innerText = `${randomQoute.author}`;
+            //qoutePElement.append(qoutePElement);
+
+            @*qoutes.forEach(qoute => {
+                const qouteElement = document.createElement('p');
+                qouteElement.innerText = `${qoute.text}. Author: ${qoute.author}`;
+                qoutePElement.append(qouteElement);
+            });*@
+        }
+    </script>
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
 </div>

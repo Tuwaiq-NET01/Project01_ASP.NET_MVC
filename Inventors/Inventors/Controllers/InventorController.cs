@@ -27,9 +27,9 @@ namespace Inventors.Controllers
                 Field = "", BirthDate = new DateTime(1844, 11, 25), DeathDate = new DateTime(1929, 4, 4)} };
 
 
-
         public IActionResult Index()
         {
+            Console.WriteLine(InventorsList[0].BirthDate.Date);
             ViewData["InventorsList"] = InventorsList;
             return View();
         }

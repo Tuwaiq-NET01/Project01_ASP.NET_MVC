@@ -82,3 +82,5 @@ C:\Users\96655\OneDrive\Desktop\Tuwaiq\ASP.NET\Project\Project01_ASP.NET_MVC\Inv
 C:\Users\96655\OneDrive\Desktop\Tuwaiq\ASP.NET\Project\Project01_ASP.NET_MVC\Inventors\Inventors\obj\Debug\net5.0\Inventors.pdb
 C:\Users\96655\OneDrive\Desktop\Tuwaiq\ASP.NET\Project\Project01_ASP.NET_MVC\Inventors\Inventors\obj\Debug\net5.0\Inventors.genruntimeconfig.cache
 C:\Users\96655\OneDrive\Desktop\Tuwaiq\ASP.NET\Project\Project01_ASP.NET_MVC\Inventors\Inventors\obj\Debug\net5.0\Inventors.csproj.CopyComplete
+C:\Users\96655\OneDrive\Desktop\Tuwaiq\ASP.NET\Project\Project01_ASP.NET_MVC\Inventors\Inventors\obj\Debug\net5.0\Razor\Views\Inventor\Details.cshtml.g.cs
+C:\Users\96655\OneDrive\Desktop\Tuwaiq\ASP.NET\Project\Project01_ASP.NET_MVC\Inventors\Inventors\obj\Debug\net5.0\Razor\Views\Invention\Details.cshtml.g.cs
