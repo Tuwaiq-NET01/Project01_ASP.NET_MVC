@@ -15,5 +15,6 @@ namespace Inventors.Models
         [DataType(DataType.Date)]
         public DateTime PatentDate { set; get; }
         public string PatentNumber { set; get; }
+        public string Description { set; get; }
     }
 }

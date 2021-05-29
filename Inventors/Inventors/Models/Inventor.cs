@@ -19,5 +19,7 @@ namespace Inventors.Models
 
         [DataType(DataType.Date)]
         public DateTime DeathDate { set; get; }
+        public string Description { set; get; }
+
     }
 }

@@ -12,7 +12,7 @@ namespace Inventors.Controllers
         List<Invention> InventionsList = new List<Invention>() {
         new Invention {Id=1, Name="Vehicle with gas engine operation",
                 Image ="https://www.daimler.com/bilder/konzern/tradition/geschichte/anfaenge-des-automobils/benz-patent-motorwagen-w768xh384-cutout.png",
-                PatentDate = new DateTime( 1886, 1, 29), PatentNumber = "37435"},
+                PatentDate = new DateTime( 1886, 1, 29), PatentNumber = "37435", Description=""},
         new Invention {Id=2, Name="Electric arc lamp",
                 Image ="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Xenon_short_arc_1.jpg/1200px-Xenon_short_arc_1.jpg",
                 PatentDate = new DateTime(1886, 02, 09), PatentNumber = "335,786"},
