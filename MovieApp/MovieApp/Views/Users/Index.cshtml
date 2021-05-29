@@ -1,0 +1,53 @@
+﻿@{
+    List<User> Users = (List<User>) ViewData["Users"];
+}
+
+
+@{
+    for (int i = 0; i < Users.Count; i++)
+    {
+        var user = Users[i];
+        <div class="user">
+            <div class="user__Details">
+                <img src="@user.ProfileImage" alt="@user.Name" class="profile-picture">
+                <p>@user.Name</p>
+            </div>
+            <div class="user__movies">
+                @{
+                    var userRatings = user.Ratings;
+                    <table class="table table-striped table-hover table-light">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Image</th>
+                            <th>Movie Name</th>
+                            <th>User Rating</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        @for (int j = 0; j < userRatings.Count; j++)
+                        {
+                            var rating = userRatings[j];
+                            <tr>
+                                <td>@(j + 1)</td>
+                                <td>
+                                    <a href="/movies/details/@rating.MovieId">
+                                        <img src="https://image.tmdb.org/t/p/w500/@rating.MovieImage" style="width: 70px;height: 100px" alt="@rating.MovieName">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="/movies/details/@rating.MovieId"> @rating.MovieName</a>
+                                </td>
+                                <td style="color: @((rating.rating) >= 7.5 ? "green" : @rating.rating >= 5.5 ? "#ffc107" : "red")">@rating.rating</td>
+                            </tr>
+                        }
+                        </tbody>
+
+                    </table>
+
+                }
+            </div>
+        </div>
+    }
+}

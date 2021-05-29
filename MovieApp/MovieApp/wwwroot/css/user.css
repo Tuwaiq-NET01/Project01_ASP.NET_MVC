@@ -1,0 +1,40 @@
+﻿td, th {
+    text-align: center;
+    vertical-align: middle !important;
+    font-weight: bold;
+    color: #000;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 100px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user a {
+    color: #0092ca;
+}
+
+.user__Details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__Details p {
+    margin-top: 15px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.user__movies {
+    flex-grow: 1;
+}
