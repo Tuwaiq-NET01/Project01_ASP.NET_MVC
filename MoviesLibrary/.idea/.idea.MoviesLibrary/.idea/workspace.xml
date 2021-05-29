@@ -6,23 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23bfc0e1-ef7e-402d-87c4-e300871b079f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MoviesLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MoviesLibrary/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/Controllers/MoviesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/Controllers/TvShowsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/Controllers/TvShowsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/Models/MovieModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/Models/MovieModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/Models/TvShowModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/Models/TvShowModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/Views/Movies/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/Views/Movies/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/Views/TvShows/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/Views/TvShows/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/MoviesLibrary.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/ref/MoviesLibrary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/bin/Debug/net5.0/ref/MoviesLibrary.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/MoviesLibrary.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/Razor/Views/Movies/Details.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/Razor/Views/Movies/Details.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/ref/MoviesLibrary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesLibrary/obj/Debug/net5.0/ref/MoviesLibrary.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622207662498</updated>
-      <workItem from="1622207684127" duration="20551000" />
+      <workItem from="1622207684127" duration="21985000" />
     </task>
     <servers />
   </component>
