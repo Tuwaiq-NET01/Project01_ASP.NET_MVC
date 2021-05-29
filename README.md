@@ -1,27 +1,23 @@
 # Project01_ASP.NET_MVC
 
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
+<div dir="rtl" >
+  
+  # محصولك
+
+  ## نبذه عن المشروع
+  
+  <img style="margin:auto;" width="250" alt="Screenshot 2021-05-26 at 19 25 30" src="https://user-images.githubusercontent.com/82483633/120075392-bbefe800-c0a9-11eb-8998-899116d1bb71.png">
+  
+  ## الصفحة الرئيسية
+   <img width="1000" alt="Screenshot 2021-05-26 at 19 25 30" src="https://user-images.githubusercontent.com/82483633/120075048-61a25780-c0a8-11eb-82b2-15441b961da1.PNG">
+
+  
+##  المتدربة: روابي براهيم الشدوخي
+## المشرفة: في العتيبي
+## اسم المجموعة: البحر الاحمر
+
+</div>
 
 
 
-
-
-فكرة المشروع
-
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
-
-متطلبات المشروع
-
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
-
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
-
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
