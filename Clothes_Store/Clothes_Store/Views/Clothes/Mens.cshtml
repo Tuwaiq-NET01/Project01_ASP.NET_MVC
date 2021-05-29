@@ -1,0 +1,19 @@
+﻿@{
+    var prds = (List<ClotheModel>)ViewData["ProductsMens"];
+}
+<h2>Mens Clothes</h2>
+<hr />
+<div class="d-flex flex-wrap">
+    @foreach (var prd in prds)
+    {
+        <div class="card border-secondary mb-3" style="width: 20rem; margin:20px;">
+            <img class="card-img-top" src=@prd.img alt=@prd.Name>
+            <div class="card-body">
+                <h5 class="card-title">@prd.Name</h5>
+                <p class="card-text">Price : @prd.Price</p>
+                <p class="card-text">Gender : @prd.gender</p>
+                <a href="/Clothes/DetailsMens/@prd.Id " class="btn btn-primary">@prd.Name</a>
+            </div>
+        </div>
+    }
+</div>

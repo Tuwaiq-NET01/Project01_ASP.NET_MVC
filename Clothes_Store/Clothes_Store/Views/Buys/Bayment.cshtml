@@ -1,0 +1,21 @@
+﻿@{ 
+    var info = (BuyModel)ViewData["Info"];
+
+}
+<br />
+<h4 class="alert-success">
+    Your order has been received
+</h4>
+<br />
+<hr />
+
+
+<div style="margin-top:70px;">
+
+    <h4 style="margin-bottom:20px;">here your information</h4>
+    <h5 style="margin-left:50px;">@info.Name</h5>
+    <h5 style="margin-left:50px;">@info.Email</h5>
+    <h5 style="margin-left:50px;">@info.PhoneN</h5>
+
+</div>
+
