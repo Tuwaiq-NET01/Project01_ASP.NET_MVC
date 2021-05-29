@@ -1,7 +1,7 @@
 # Domain Info
 
-**LOGO**
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/AWManeea/Project01_ASP.NET_MVC/main/wwwroot/assets/logo.png" height="128px"></p>
 Domain Info is a web application built with ASP.NET MVC Framework to facilitate
 gathering information about a given domain. It allows users to ask for a
 plethora of different DNS record types and public WHOIS Records.
