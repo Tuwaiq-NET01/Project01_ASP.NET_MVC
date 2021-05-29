@@ -1,0 +1,39 @@
+﻿@model IEnumerable<HealthChoice.Models.HealthResturentsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align: center; color: white; margin-top: 15%">Available Resturants</h1>
+<h1 style="text-align: center; color: white ">Freshly Cooked ... Best Services ... Free Delivery </h1>
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+
+            <div class="col-4" style="margin-top:10%; text-align:center">
+                <div class="card mb-3">
+                    <h3 class="card-header">@item.ResName</h3>
+                    <div class="card-body">
+                        <img class="card-img-top" src="@item.ResLogo" alt="Card image cap" height="200" width="80">
+                       
+               
+                    </div>
+
+                    <div class="card-body">
+                        <a href="/HealthyResturents/Details/@item.ResID" class="btn btn-dark">Book</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        }
+
+    </div>
+</div>
+
+

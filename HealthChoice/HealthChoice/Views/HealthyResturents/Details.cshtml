@@ -1,0 +1,33 @@
+﻿
+@{
+    var Res = (HealthResturentsModel)ViewData["Res"];
+
+}
+
+
+
+    <div class="card mb-5" style="margin-bottom:20px; margin-top:20px; text-align:center">
+        <div class="card mb-12">
+            <h3 class="card-header">@Res.ResName</h3>
+            <div class="card-body">
+                <p>Resturant Description: @Res.ResDescription</p>
+                <div class="row" style="align-content: center">
+                <div class="col d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="@Res.ResLogo" alt="Card image cap"height="400" width="200">
+                </div>
+                </div>
+                </div>
+
+            <div class="card-body">
+                <div class="card-body">
+                    <a href="/HealthyResturents" class="btn btn-dark">Back</a>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+

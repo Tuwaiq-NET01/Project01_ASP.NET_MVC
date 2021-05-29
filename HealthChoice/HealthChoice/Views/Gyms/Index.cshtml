@@ -1,0 +1,42 @@
+﻿@model IEnumerable<HealthChoice.Models.GymsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<h1 style="text-align: center; color: white; margin-top: 10%;">Available Gyms</h1>
+<h1 style="text-align: center; color: white ">
+    WE'RE HERE TO HELP YOU GROW
+    No matter what your goal is, we can develop a complete fitness plan for you!
+</h1>
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+
+            <div class="col-4" style="margin-top:10%; text-align:center">
+                <div class="card mb-3">
+                    <h3 class="card-header">@item.GymNam</h3>
+                    <div class="card-body">
+                        <img class="card-img-top" src="@item.GymLogo" alt="Card image cap" height="200" width="80">
+
+
+                    </div>
+
+                    <div class="card-body">
+                        <a href="/Gyms/Details/@item.GymId" class="btn btn-dark">Book</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        }
+
+    </div>
+</div>

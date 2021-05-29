@@ -1,0 +1,27 @@
+﻿
+@{
+    var Gym = (GymsModel)ViewData["Gyms"];
+
+}
+
+
+
+<div class="card mb-5" style="margin-bottom:20px; margin-top:20px; text-align:center">
+    <div class="card mb-12">
+        <h3 class="card-header"> @Gym.GymNam</h3>
+        <div class="card-body">
+            <p> @Gym.GymDescription</p>
+            <div class="row" style="align-content: center">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="@Gym.GymLogo" alt="Card image cap" height="400" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="card-body">
+                <a href="/Gyms" class="btn btn-dark">Back</a>
+            </div>
+
+        </div>
+    </div>

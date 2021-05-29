@@ -1,0 +1,53 @@
+﻿@model IEnumerable<HealthChoice.Models.CustomerModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align: center; color: white; margin-top: 15%;">Customer List</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+               Age
+            </th>
+            <th>
+               Weight
+            </th>
+            <th>
+               Height
+            </th>
+            <th>
+                E-mail
+            </th>
+          
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerWeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerHeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerMail)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>
