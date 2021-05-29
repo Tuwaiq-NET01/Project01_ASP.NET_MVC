@@ -1,0 +1,32 @@
+﻿
+@{
+    var items = (List<ServiceModel>)ViewData["Items"];
+}
+<header>
+    <style>
+        a {
+            color =
+        }
+    </style>
+</header>
+<table class="table table-hover table-active" border="1" color="black" cellpadding="5px" width="75%" align="center">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Brand</td>
+        <td>Price</td>
+        <td>Image</td>
+    </tr>
+    @foreach (var item in items)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.price</td>
+            <td><image height="200" src=@item.image></image></td>
+            <td><a href="/services/details/@item.id"><button type="button" class="btn btn-secondary">Show</button></a></td>
+        </tr>
+    }
+
+</table>
+

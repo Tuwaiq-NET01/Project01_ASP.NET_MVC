@@ -1,0 +1,11 @@
+﻿@{
+    var product = (ServiceModel)ViewData["Items"];
+    ViewData["Title"] = "Search Result";
+    Layout = "ProductsLayout";
+}
+
+<div><b>ID:     </b>@product.id</div>
+<div><b>Name:   </b>@product.name</div>
+<div><b>Price:  </b>@product.price</div>
+<br />
+<div><b>Image: </b><br /><img src=@product.image /></div>
