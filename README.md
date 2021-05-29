@@ -9,6 +9,7 @@
 <br>
 
 </div>
+Live : https://animeinfo.azurewebsites.net/Animes
 <br>
 Controller/Action
 <br>
