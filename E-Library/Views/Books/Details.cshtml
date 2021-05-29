@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Book Details";
+    Book book = ViewBag.book;
+}
+
+
+@if (book != null)
+{
+    <h1>Book details</h1>
+    <div class="row border border-secondary border-5 rounded-3 col-6 offset-md-2" style="margin-top: 100px;">
+        <div class="col" style="margin-top: 10px">
+            <img src=@book.Image alt=@book.Image />
+        </div>
+        <div class="col" style="margin-top: 10px; margin-bottom: 10px;">
+            <h3>@book.Title</h3>
+            <br />
+            <p>Author: @book.Author</p>
+            <p>Price: $@book.Price</p>
+            <p>ISBN: @book.ISBN</p>
+            <p>Description: </p>
+            <p>@book.Description</p>
+            <a href="/Books" class="btn btn-primary">Go Back!</a>
+        </div>
+    </div>
+}
+else
+{
+    <h1>Book Does not exist!</h1>
+    <a href="/Books" class="btn btn-primary">Go Back!</a>
+}
+
+
