@@ -4,13 +4,17 @@
 
 # Requirement :
 
-## Website contain at least 2 Controller , 2 Models and 3 View also some design in bootstrap
+* Website contain at least 2 Controller , 2 Models and 3 View also some design in bootstrap
 
   
 
 # Project Idea :
 
-#### Toye's Store contain 4 Controller (Home ,Product , Customer , and Payment ) and 3 Model (Customer , Payment , Product) also contain 4 View (Index customer , Home index and contact , Product index and More Details View also the payment) and EF Relation between the payment and customer also 2 Layout(_LayoutMain , _Layout)
+*  Toye's Store contain 4 Controller (Home ,Product , Customer , and Payment ) and
+*  3 Model (Customer , Payment , Product) 
+*  4 View (Index customer , Home index and contact , Product index and More Details View also the payment) 
+*  EF Relation between the payment and customer 
+*  2 Layout (_LayoutMain , _Layout)
 
   ### Clone by 
   ```
@@ -25,7 +29,7 @@ git commit -m "upload the project "
 git push
   ```
 
-### output
+### Output
 
   
 
