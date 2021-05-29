@@ -1,0 +1,49 @@
+@{
+    var post = (PostModel) ViewData["Post"];
+    var comments = (IEnumerable<PostModel>) ViewData["Comments"];
+}
+
+<div class="container w-75">
+    <div class="row gx-5 align-items-center">
+      <div class="card-header">
+        <h1 class="card-title">
+          @post.Title
+        </h1>
+        <p class="card-text fw-light fs-6">
+          @post.Score points | @post.GetRelativePostDate() | by <a class="text-reset" href="/users?username=@post.Author">@post.Author</a>
+        </p>
+        <button class="btn btn-light w-100">
+          <a class="text-reset text-decoration-none" href="@post.Url" target=”_blank”>
+            Read the original article
+            <i class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                             <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                           </svg></i>
+          </a>
+        </button>
+      </div>
+      <div class="card-body">
+        <h3 class="fw-normal mt-2">Comments</h3>
+      </div>
+    </div>
+    
+  @if (comments == null)
+  {
+    <div>post doesn't have any comments </div>
+  }
+  else
+  {
+    <div class="row">
+      @foreach (var c in comments)
+      {
+        <div class="media my-4">
+          <div class="media-body">
+            <h6><a class="text-reset mt-0">@c.Author</a></h6>
+            <p class="fs-7 fw-light">@c.GetRelativePostDate()</p>
+            @Html.Raw(@c.Content)
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>

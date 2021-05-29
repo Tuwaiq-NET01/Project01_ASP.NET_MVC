@@ -1,0 +1,21 @@
+@{
+    var user = (UserModel) ViewData["User"];
+}
+
+<div class="container px-5 my-6">
+    <div class="row gx-5 align-items-center">
+        <div class="card user-card mx-auto border-0">
+            <div class="card-header">
+                <a class="text-reset text-decoration-none" href="/users?username=@user.Username"><h3 class="card-title">@user.Username</h3></a>
+                <p class="card-text fw-normal fs-6 primary-color">@user.Karma Karma</p>
+                <p class="card-text fw-light fs-6">Member since @user.FormattedCreatedAt</p>
+                <p class="">
+                    @Html.Raw((@user.About))
+                </p>
+            </div>
+            <div class="card-body">
+                <div>posts jffry created:</div>
+            </div>
+        </div>
+    </div>
+</div>

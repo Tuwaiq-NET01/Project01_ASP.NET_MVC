@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - HNews</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row text-center">
+                <a class="blog-header-logo text-dark" href="#">HNews</a>
+        </div>
+    </header>
+    
+    <div class="py-1 mb-2">
+        <nav class="nav d-flex justify-content-center">
+            <a class="p-2 link-secondary fs-5 fw-light" asp-area="" asp-controller="Posts" asp-action="TopPosts">Top</a>
+            <a class="p-2 link-secondary fs-5 fw-light" href="#">New</a>
+        </nav>
+    </div>
+</div>
+
+<div class="container px-5 mt-3 min-h">
+    <main role="main" class="main pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+@* <footer class="border-top footer text-muted"> *@
+@*     <div class="container"> *@
+@*         &copy; 2021 - HNews - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
+@*     </div> *@
+@* </footer> *@
+
+<div class="py-3 my-2 text-center">
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+        <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg></a>
+</div>
+<footer class="blog-footer">
+    <p>foooter c 2012</p>
+</footer>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
