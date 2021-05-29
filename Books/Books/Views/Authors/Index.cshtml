@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MvcMovie.Models.Author>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-info">Authors List</h1>
+
+<p>
+    <a class="btn btn-info form-control text-white" asp-action="Create">Create New</a>
+</p>
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
+                <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.AuthorId">Edit</a>
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.AuthorId">Details</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.AuthorId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
