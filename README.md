@@ -1,27 +1,77 @@
-# Project01_ASP.NET_MVC
+# Game Store
+### A video games library
+A video game website that allow you to view games info.
+
+<br>
+
+## Getting Started
+To run this project on your local machine, fork and clone the repo from github. <br>
+Install all dependencies by running `npm i` in the project directory terminal inside ClientApp folder. <br>
+Run `dotnet run` to start your app.<br>
+
+<br><br><br>
+# Use
+
+Download the project.
+<br><br><br>
+
+# Features
+- [x] listing Games from game api
+<br><br><br>
+
+## Game Details
+Click on the game to see more info
+<br><br><br>
+
+# Future Updates
+
+- [x] tablet browsers support
+- [x] phone browsers support
+- [ ] searching Games by title
+- [ ] add games to your favorite list
+- [ ] manage your favorite list
+- [ ] Adding already played tab
+- [ ] Adding the ability to add comments on games that already have been played
+- [ ] Adding the ability to Drag and Drop
+- [ ] Adding more animations
+- [ ] Adding more Styling
+<br><br><br>
+
+# Technologies used 
+
+- HTML
+- CSS
+- js
+- React
+- Axios
+- .Net
+- npm
+- React-bootstrap
+- Rsuitejs
+<br>
+
+## Run the game Requirement:
+
+All application components are usable across modern desktop, tablet and phone browsers .
+<br>
+
+## API REFERENCE
+ API | Method | Router | URL
+-----|--------|--------|-----
+rawg| GET    | /games  | https://rawg.io/games
+
+<br><br><br>
+
+<div align="right">
+
+## معلومات المتدرب
+
+المدرب: محمد الجاسر
+
+المتدرب: فيصل الصقري
+
+المجموعة: امالا
+
+</div>
 
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
-
-
-
-
-
-فكرة المشروع
-
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
-
-متطلبات المشروع
-
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
-
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
-
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
