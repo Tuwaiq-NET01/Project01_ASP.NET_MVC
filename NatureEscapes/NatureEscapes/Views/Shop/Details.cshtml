@@ -1,0 +1,23 @@
+﻿@{
+   var product = (ProductModel) ViewData["product"];
+}
+<div class="border-b border-black p-4 text-center text-4xl">
+    Product Details
+</div>
+<div class="grid grid-cols-2 gap-2 border-b border-black">
+    <div>
+    <img class="border-r border-black"src="@product.Image" />
+    </div>
+    <div class="p-4 pl-9 pr-9">
+        <a class="text-sm mb-9" href="/shop/index">← Back to Products</a>
+        <h1 class="text-6xl">@product.Name</h1>
+        <h2 class="text-gray-500 text-lg mb-6">@product.Price USD</h2>
+        <p class="leading-relaxed text-sm">
+            @product.Description
+        </p>
+        <h2 class="text-gray-500">Size: @product.Size oz</h2>
+        <button class="bg-black text-white p-2 pl-16 pr-16 font-sans font-semibold mt-4">
+            <a href="#">BUY</a>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var reviews = (List<ReviewModel>)ViewData["reviews"];
+}
+
+<section class="landing">
+    <div class="landing-txt leading-loose">
+        <h1 class="text-6xl text-center mb-4">Nature Escapes</h1>
+        <h4 class="text-4xl mb-8">
+            Natural Handcrafted Bath
+            <span class="text-5xl font-serif and-symbol">&</span>
+            <br />  Beauty Products
+        </h4>
+        <a class="text-1xl italic text-gray-600 gap-y-2" id="arrow">Start shopping →</a>
+    </div>
+    <div>
+        <div class="landing-img landing-img1"></div>
+        <div class="landing-img landing-img2"></div>
+        <div class="landing-img landing-img3"></div>
+    </div>
+</section>
+<section class="p-9">
+    <div>
+        <h1 class="text-6xl text-center">
+            Our handmade
+            <br /> organic soaps
+        </h1>
+    </div>
+    <div class="grid grid-cols-7 mt-4">
+        <div class="text-lg">
+            <span class=" transform -rotate-90 pl-16 text-center mt-48 italic">Shop all products</span>
+        </div>
+        <div class="col-span-2">
+            <span class="font-sans text-sm">01</span>
+            <div class="sec2-img sec2-img1"></div>
+        </div>
+        <div class="col-span-2">
+            <span class="font-sans text-sm">02</span>
+            <div class="sec2-img sec2-img2"></div>
+        </div>
+        <div class="col-span-2">
+            <span class="font-sans text-sm">03</span>
+            <div class="sec2-img sec2-img3"></div>
+        </div>
+    </div>
+</section>
+
+@*reviews section*@
+<section class="bg-gray-100 grid grid-cols-3 gap-4 p-16">
+    <div class="col-span-2">
+        <div class="grid grid-cols-3 gap-4">
+            @*Review cards*@
+            @foreach (var r in reviews)
+            {
+
+                <div class="p-4 bg-white">
+                    <div class="flex justify-between mb-2">
+                        <div>
+                            <span class="text-lg font-semibold">@r.Username</span>
+                        </div>
+                        <div>
+                            <span class=" text-sm text-right font-semibold italic text-gray-600">from @r.Source</span>
+                        </div>
+                    </div>
+                    <span class="text-gray-300 text-6xl absolute">”</span>
+                    <div class="flex items-center">
+                        <p class="text-center text-lg my-auto z-20 mt-4">
+                            @r.Content
+                        </p>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <div>
+        <span class="text-center text-6xl mt-4 ml-4 leading-normal">
+            Why are we
+            <br />the best?
+            <br />
+        </span>
+    </div>
+</section>

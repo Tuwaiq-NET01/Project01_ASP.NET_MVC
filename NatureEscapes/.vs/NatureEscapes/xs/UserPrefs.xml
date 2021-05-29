@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{B50AC4F2-35D4-4843-88A8-9AE1C2D6A38B}|Default">
+  <MonoDevelop.Ide.ItemProperties.NatureEscapes PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NatureEscapes/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="NatureEscapes/wwwroot/css/site.css" Line="99" Column="15" />
+      <File FileName="NatureEscapes/Views/Shop/Index.cshtml" Line="11" Column="18" />
+      <File FileName="NatureEscapes/Views/Home/Index.cshtml" Line="32" Column="15" />
+      <File FileName="NatureEscapes/Views/Shared/_Layout.cshtml" Line="19" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NatureEscapes" expanded="True">
+            <Node name="NatureEscapes" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+                <Node name="Shop" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

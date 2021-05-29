@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NatureEscapes</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link href="https://unpkg.com/tailwindcss@@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="border-b border-black font-sans">
+        <nav>
+            <div class="flex justify-between nav">
+            <div class="flex gap-7 items-center font-semibold">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="border-r border-black text-center p-2">Home</a>
+            <a asp-area="" asp-controller="Shop" asp-action="Index" class="border-r border-black text-center p-2">Shop</a>
+            <a asp-area="" asp-controller="Community" asp-action="Index" class="border-r border-black text-center p-2">Q&A</a>  
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="border-l border-black text-center p-2 t-lg">♥︎</span>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="text-center bottom-0 pt-4">
+            &copy; 2021 - NatureEscapes
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

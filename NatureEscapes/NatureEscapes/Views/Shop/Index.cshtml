@@ -1,0 +1,33 @@
+﻿@{
+    var products = (List<ProductModel>) ViewData["products"];
+    var rows = (int)products.Count() / 3 + 1;
+}
+<div class="border-b border-black p-4 text-center text-4xl">
+    Natural Soap Bars
+</div>
+
+<section class="grid grid-rows-@rows grid-cols-4 gap-2 p-8">
+    <div class="row-span-@rows pl-4 pr-2 pb-2 leading-loose">
+        <h2 class="text-2xl mb-4 font-medium">Categories</h2>
+        <ul>
+            <li><a href="#">(@products.Count()) Soaps</a></li>
+            <li class="italic">Candles (soon..)</li>
+            <li class="italic">Bath bombs (soon..)</li>
+            <li class="italic">Gift sets (soon..)</li>
+        </ul>
+    </div>
+    @foreach(var p in products)
+            {
+                <div class="border border-black p-2 text-center">
+                    <div class="image-holder mb-4">
+                        <img src="@p.Image"/>
+                    </div>
+                    <h3 class="font-semibold uppercase">@p.Name</h3>
+                    <h6 class="text-gray-500 italic text-sm">@p.Price USD</h6>
+
+                    <button class="bg-black text-white pl-6 pr-6 font-sans font-semibold mt-2">
+                    <a href="/shop/details/@p.ID">BUY</a>
+                    </button>
+                </div>
+            }
+</section>
