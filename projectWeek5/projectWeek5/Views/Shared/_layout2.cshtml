@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .bigImage {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-image: url(https://as1.ftcdn.net/v2/jpg/02/15/95/34/1000_F_215953481_NoTkZ9O7QiLs6VRjedxsMlPfoAB84DmI.jpg);
+            background-size: cover;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            font-size: 26px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="bigImage">
+        <div class="overlay">
+            <h1> GOOD FOOD</h1>
+            <h2>GOOD MOOD</h2>
+            <a href="/Recipes/Index"><button type="button" class="btn btn-outline-info">show</button></a>
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
+
