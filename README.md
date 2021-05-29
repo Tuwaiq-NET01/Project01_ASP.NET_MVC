@@ -1,6 +1,6 @@
 # Blog-Website
 
-## Technical Used 
+## Technology used 
 * ASP.NET MVC 
 * Bootstrap 
 <br>
