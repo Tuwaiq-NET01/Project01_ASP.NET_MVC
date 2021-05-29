@@ -2,7 +2,7 @@
 
 <h1>Movies and TV Shows Library</h1>
 
-![website image](HomeImage.PNG)
+![website image](HomeImage.png)
 ![](MoviesImgae.png)
 ![](DetaileImage.png)
 ![](PosterImage.png)
