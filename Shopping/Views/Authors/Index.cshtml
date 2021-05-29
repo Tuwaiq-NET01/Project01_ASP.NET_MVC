@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "المؤلفون";
+    var items = (List<AuthorModel>)ViewData["Authors"];
+
+}
+
+<h3>المؤلفون</h3>
+
+<table class="table table-dark table-hover" @*style="background-color:@color" *@>
+    <thead>
+        <tr>
+            <th scope="col">الرقم </th>
+            <th scope="col">الأسم</th>
+            <th scope="col">الإيميل</th>
+            <th scope="col">اسم الكتاب </th>
+            <th scope="col">صورة الكتاب</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in items)
+        {
+        <tr>
+            <th scope="row">@item.Id</th>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.AuthorBookName</td>
+            <td><img style="width:200px; height:200px" src="@item.AuthorBookImage" alt="@item.AuthorBookName" /></td>
+        </tr>
+        }
+    </tbody>
+</table>

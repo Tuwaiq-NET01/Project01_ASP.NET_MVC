@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "الرئيسية";
+    var items = (List<ProductModel>)ViewData["products"];
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4"> مرحباً بكم</h1>
+    <img src="~/images/books-library.jpg" height="300" width="700"/>
+</div>
+
+
+<h3>جميع المنتجات</h3>
+<div class="card-columns">
+
+
+    @foreach (var item in items)
+    {
+        <div class="card text-center"  >
+            <img src="@item.Image" class="card-img-top " style ="max-width:200px" alt="@item.Name">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+              <p class="card-text"><a href="/Products/Details/@item.Id"> <button type="button" class="btn btn-danger"> المزيد </button></a></p>
+              
+            </div>
+        </div>
+
+    }
+
+
+
+</div>
