@@ -1,7 +1,8 @@
 # Project01_ASP.NET_MVC
 
 <h1>Movies and TV Shows Library</h1>
-![website image](HomeImage.png)
+
+![website image](HomeImage.PNG)
 ![](MoviesImgae.png)
 ![](DetaileImage.png)
 ![](PosterImage.png)
