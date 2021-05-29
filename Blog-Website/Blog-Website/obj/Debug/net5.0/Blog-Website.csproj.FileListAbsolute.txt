@@ -41,3 +41,4 @@ C:\Users\abdul\OneDrive\سطح المكتب\.net\Project01_ASP.NET_MVC\Blog-Webs
 C:\Users\abdul\OneDrive\سطح المكتب\.net\Project01_ASP.NET_MVC\Blog-Website\Blog-Website\obj\Debug\net5.0\Razor\Views\Articles\Details.cshtml.g.cs
 C:\Users\abdul\OneDrive\سطح المكتب\.net\Project01_ASP.NET_MVC\Blog-Website\Blog-Website\obj\Debug\net5.0\Razor\Views\Articles\Index.cshtml.g.cs
 C:\Users\abdul\OneDrive\سطح المكتب\.net\Project01_ASP.NET_MVC\Blog-Website\Blog-Website\obj\Debug\net5.0\Razor\Views\Authors\Index.cshtml.g.cs
+C:\Users\abdul\OneDrive\سطح المكتب\.net\Project01_ASP.NET_MVC\Blog-Website\Blog-Website\obj\Debug\net5.0\Razor\Views\RealDataArticles\Index.cshtml.g.cs
