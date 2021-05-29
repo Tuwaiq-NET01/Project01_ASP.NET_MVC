@@ -1,27 +1,63 @@
-# Project01_ASP.NET_MVC
+# Domain Info
 
+**LOGO**
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
+Domain Info is a web application built with ASP.NET MVC Framework to facilitate
+gathering information about a given domain. It allows users to ask for a
+plethora of different DNS record types and public WHOIS Records.
 
+## Demo
 
+A [live demo](https://domaininfo.azurewebsites.net/) has been deployed to Azure
+for those who prefer not to clone the project and deploy it.
 
+## Project Structure
 
+The project has been structured in the following way:
 
-فكرة المشروع
+```bash
+Models/
+├── Domain.cs
+├── DNSRecord.cs
+├── DNSRecords.cs
+└── WhoisRecord.cs
+Controllers/
+├── HomeController.cs
+├── DNSController.cs
+└── WhoisController.cs
+Views/
+├── DNS
+│   ├── Index.cshtml
+│   └── Lookup.cshtml
+├── Home
+│   └── Index.cshtml
+└── Whois
+    ├── Index.cshtml
+    └── Lookup.cshtml
+```
 
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
+## APIs Under the Hood
 
-متطلبات المشروع
+Since it provides two distinct services, the web app uses two different APIs to
+retrieve the data. The first of which is
+[Google's public DNS JSON API](https://developers.google.com/speed/public-dns/docs/doh/json)
+and the second is a custom API end-point that I have created to retrieve WHOIS
+records. The WHOIS endpoint is located at
+[Maneea.net/api/whois/{domain}](http://maneea.net/api/whois/example.com) and can
+be used for free, for ever :)
 
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
+## Usage
 
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
+To download and use the web app locally, simply copy and paste the following
+snippet into the terminal:
 
-جزء Bonus
+```bash
+# Downloads the repository (clone it) locally.
+git clone https://github.com/AWManeea/Project01_ASP.NET_MVC.git
 
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+# Change the current working directory and go into the project
+cd Project01_ASP.NET_MVC
+
+# Simply run it from the command line with the following command
+dotnet run
+```
