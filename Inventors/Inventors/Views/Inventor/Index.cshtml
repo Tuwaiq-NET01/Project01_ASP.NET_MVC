@@ -2,4 +2,23 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    var inventors = (List<Inventor>)ViewData["InventorsList"];
 }
+
+<div class="card-deck">
+
+    @foreach (var inventor in inventors)
+    {
+        <div class="card">
+            <img class="card-img-top" src="@inventor.Image" alt="Card image cap" height="200">
+            <div class="card-body">
+                <h5 class="card-title">Name: @inventor.Name</h5>
+                <p class="card-text">Bitrht Date: @inventor.BirthDate</p>
+                <p class="card-text">Death Date: @inventor.DeathDate</p>
+                <p class="card-text">Nationality: @inventor.Nationality</p>
+                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+                <a href="Products/Details/?id=@inventor.Id" class="btn btn-primary">Show</a>
+            </div>
+        </div> 
+    }
+</div>
