@@ -1,0 +1,53 @@
+﻿@{ var product = (ProductModel)ViewData["product"];
+
+}
+
+<table class="table table-bordered">
+
+
+    <thead>
+        <tr>
+            <th scope="col">Book Id  </th>
+            <th scope="col"> Book Name </th>
+            <th scope="col">  Book Price  </th>
+            <th scope="col"> Book Author  </th>
+            <th scope="col"> Book Image   </th>
+            <th scope="col"> Back   </th>
+
+        </tr>
+    </thead>
+  
+
+    <tbody>
+        <tr>
+            <td scope="row" style="text-align:center">
+                @product.Id
+            </td>
+
+
+            <td scope="row" style="text-align:center ">
+                @product.Name
+            </td>
+
+
+            <td scope="row" style="text-align:center">
+                @product.Price
+            </td>
+            <td scope="row" style="text-align:center">
+                @product.Author
+            </td>
+            <td>
+                <img style=width:200 height=200 src="@product.Image" alt="@product.Image" />
+
+            </td>
+            <td style="text-align:center">
+                <a href="/Products">
+                    <button type="button" class="btn btn-outline-info">Back</button>
+                </a>
+            </td>
+        </tr>
+
+    </tbody>
+
+
+</table>
