@@ -5,16 +5,23 @@
 <div @*class="text-center"*@>
     <h5 class="display-4 ">Welcome!</h5>
     <hr>
-    <p id="main">
+    <small class="text-muted">
         Fascinated with inventions stories? This is the place for you!
-    </p>
+    </small>
+    <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <blockquote class="quote-card yellow-card">
+                        @*<blockquote class="blockquote">*@
+                        <p class="mb-0" id="qoute">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer" id="footer">Someone famous</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
 
-    <blockquote class="blockquote">
-        <p class="mb-0" id="qoute">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer" id="footer">Someone famous</footer>
-    </blockquote>
-
-    <script type="text/javascript">
+                    <script type="text/javascript">
     fetch("https://type.fit/api/quotes")
     .then(function(response) {
     return response.json();
@@ -37,6 +44,6 @@
                 qoutePElement.append(qouteElement);
             });*@
         }
-    </script>
-    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
-</div>
+                    </script>
+                    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+            </div>
