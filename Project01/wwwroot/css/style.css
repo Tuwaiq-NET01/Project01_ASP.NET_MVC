@@ -2,10 +2,6 @@
     background-color: white;
 }
 
-.footer{
-    background-color:white;
-}
-
 .menu {
     position: absolute;
     z-index: -1;
@@ -95,4 +91,3 @@
     cursor: pointer;
 }
 
-/**Pruducts List*/

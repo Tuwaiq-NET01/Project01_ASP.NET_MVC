@@ -1,8 +1,22 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @{
     ViewData["Title"] = "Details";
+    var item = (ItemModel)ViewData["Items"];
 }
 
 <h1>Details</h1>
+
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="@item.Image" height="250" width="250" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn" style=" background-color: #b8c01f;">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>

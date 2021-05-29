@@ -24,9 +24,18 @@ namespace Project01.Controllers
             return View(itemsList);
         }
 
-        public IActionResult Details()
+        public IActionResult Details(int id)
         {
-            return View();
+            ItemModel item = itemsList.Find(P => P.ID == id);
+            if (item == null)
+            {
+                return Content("No item in this name");
+            }
+            else
+            {
+                ViewData["Items"] = item;
+                return View();
+            }
         }
     }
 }
