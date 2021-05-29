@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Batool Alghamdi\\source\\repos\\plantsShop\\plantsShop\\plantsShop.csproj",
+      "projectUniqueName": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.NET\\Projects\\Project01_ASP.NET_MVC\\plantsShop\\plantsShop\\plantsShop.csproj",
       "projectName": "plantsShop",
-      "projectPath": "C:\\Users\\Batool Alghamdi\\source\\repos\\plantsShop\\plantsShop\\plantsShop.csproj",
+      "projectPath": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.NET\\Projects\\Project01_ASP.NET_MVC\\plantsShop\\plantsShop\\plantsShop.csproj",
       "packagesPath": "C:\\Users\\Batool Alghamdi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Batool Alghamdi\\source\\repos\\plantsShop\\plantsShop\\obj\\",
+      "outputPath": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.NET\\Projects\\Project01_ASP.NET_MVC\\plantsShop\\plantsShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

@@ -6,8 +6,8 @@
     
 }
 
-<table style="width:100%" class="table table-striped table-hover">
-    <tr class="table table-striped">
+<table style="width:150%;" class="table table-hover bg-white box-shadow rounded mx-auto">
+    <tr>
 
         <th scope="col">NAME</th>
         <th scope="col">LOCATION</th>
@@ -15,7 +15,7 @@
     </tr>
     @foreach (var s in shops)
     {
-        <tr class="table-light">
+        <tr>
             <td>@s.name</td>
             <td> @s.location</td>
             <td>Tel: @s.phone</td>
