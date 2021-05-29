@@ -1,0 +1,17 @@
+﻿
+<h1 style="color:whitesmoke; margin-left:80px" >Recipe Details</h1>
+
+@{
+    var recipesD = (Recipe)ViewData["recipesD"];
+}
+
+<div class="card" style="width: 20rem; margin-left:70px">
+ 
+        <img src="@recipesD.dishImage" class="card-img-top" alt="..." width="300" height="400">
+    
+    <div class="card-body">
+ 
+        <p class="card-text" style="font-family: 'Comic Sans MS'">@recipesD.ingredients</p>
+
+    </div>
+</div>
