@@ -1,6 +1,10 @@
 @{
 
     var tvShow = (TvShowModel) ViewData["TvShow"];
-    <h1 class="align-middle" style="color: white">ID is @tvShow.Id, Name is @tvShow.Name, Year is @tvShow.Year. <img src="@tvShow.Image" height="200px" alt="Not supported"></h1>
+    <img src="@tvShow.Image" height="200px" alt="Not supported">
+    <h3 class="align-middle" style="color: white">ID: @tvShow.Id</h3>
+    <h3 class="align-middle" style="color: white">Name: @tvShow.Name</h3>
+    <h3 class="align-middle" style="color: white">Year: @tvShow.Year</h3>
+    <h3 class="align-middle" style="color: white">Summury: @tvShow.Summury. </h3>
 
 }

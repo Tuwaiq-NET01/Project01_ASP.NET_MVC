@@ -73,6 +73,7 @@ namespace MoviesLibrary.Controllers
                     Id = i + 1,
                     Name = result[i]["original_title"].ToString(),
                     Year = result[i]["release_date"].ToString(),
+                    Summury = result[i]["overview"].ToString(),
                     Image = "https://image.tmdb.org/t/p/w300" + result[i]["poster_path"].ToString()
                 });
             }

@@ -1,6 +1,11 @@
 @{
 
     var movie = (MovieModel) ViewData["Movie"];
-    <h1 class="align-middle" style="color: white">ID is @movie.Id, Name is @movie.Name, Year is @movie.Year. <img src="@movie.Image" height="200px" alt="Not supported"></h1>
+    <img src="@movie.Image" height="200px" alt="Not supported">
+    <h3 class="align-middle" style="color: white">ID: @movie.Id</h3>
+    <h3 class="align-middle" style="color: white">Name: @movie.Name</h3>
+    <h3 class="align-middle" style="color: white">Year: @movie.Year</h3>
+    <h3 class="align-middle" style="color: white">Summury: @movie.Summury. </h3>
+
 
 }
