@@ -1,21 +1,46 @@
-﻿<Properties StartupConfiguration="{AC19CC21-73E9-476B-BDA9-8A28DDBD30BC}|Default">
-  <MonoDevelop.Ide.ItemProperties.Valorant__Tournaments FirstBuild="True" PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Valorant_Tournaments/Views/Home/Index.cshtml">
+﻿<Properties StartupConfiguration="{D516F28F-54FE-4596-8EDA-1A39F6CE6B99}|Default">
+  <MonoDevelop.Ide.ItemProperties.Val__Tournaments PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Val_Tournaments/Views/Teams/Index.cshtml">
     <Files>
-      <File FileName="Valorant_Tournaments/Models/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="Valorant_Tournaments/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Val_Tournaments/Views/Tournaments/Details.cshtml" Line="34" Column="41" />
+      <File FileName="Val_Tournaments/Views/Tournaments/Index.cshtml" Line="56" Column="79" />
+      <File FileName="Val_Tournaments/Views/Shared/Error.cshtml" />
+      <File FileName="Val_Tournaments/Views/_ViewImports.cshtml" Line="1" Column="15" />
+      <File FileName="Val_Tournaments/Views/_ViewStart.cshtml" />
+      <File FileName="Val_Tournaments/Views/Home/Privacy.cshtml" />
+      <File FileName="Val_Tournaments/Views/Shared/_Layout.cshtml" Line="21" Column="51" />
+      <File FileName="Val_Tournaments/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="Val_Tournaments/Controllers/TeamsController.cs" Line="39" Column="31" />
+      <File FileName="Val_Tournaments/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Val_Tournaments/Models/TouurnamentModel.cs" Line="10" Column="27" />
+      <File FileName="Val_Tournaments/Models/TeamModel.cs" Line="8" Column="16" />
+      <File FileName="Val_Tournaments/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Val_Tournaments/Startup.cs" Line="43" Column="27" />
+      <File FileName="Val_Tournaments/wwwroot/css/styles.css" Line="1" Column="1" />
+      <File FileName="Val_Tournaments/Controllers/TournamentsController.cs" Line="67" Column="1" NotebookId="1" />
+      <File FileName="Val_Tournaments/Views/Teams/Index.cshtml" Line="53" Column="71" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Valorant_Tournaments" expanded="True">
-            <Node name="Valorant_Tournaments" expanded="True">
+            <Node name="Val_Tournaments" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Teams" expanded="True">
                   <Node name="Index.cshtml" selected="True" />
                 </Node>
+                <Node name="Tournaments" expanded="True" />
               </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True" />
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -23,6 +48,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Valorant_Tournaments/Valorant_Tournaments.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

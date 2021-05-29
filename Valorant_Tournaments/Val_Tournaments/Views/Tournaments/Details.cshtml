@@ -1,0 +1,79 @@
+﻿@{
+    Layout = "_Layout";
+    var tournament = (TouurnamentModel)ViewBag.tournaments;
+
+    @*var tournaments = (dynamic)ViewBag.tournaments;
+    var uri = ViewBag.uri;*@
+}
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">Tournaments.GG</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Tournaments" asp-action="Index">Tournaments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " asp-area="" asp-controller="Teams" asp-action="Index">Teams</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="signup-section d-flex justify-content-center">
+    <div class="container bg-light p-5 mb-2 rounded ">
+        <div class="col-md-12">
+            <ul>
+                <li>Tournament Name: @tournament.Name </li>
+                <li>Tournament Start Date: @tournament.Start_date </li>
+                <li>Tournament End Date: @tournament.End_date </li>
+                <li>Tournament Tier: @tournament.Tier</li>
+                <li>Tournament Logo: <img width="100px" height="=100px" src="@tournament.Logo"/> </li>
+            </ul>
+            @*<table id="myTable" class="table-striped table-bordered table-hover">
+            <thead class="bg-dark text-light">
+                <tr>
+                    <th width="300">Tournament Name</th>
+                    <th width="100">Tier</th>
+                    <th>Start Date</th>
+                    <th>Status</th>
+                    <th width="150">Logo</th>
+                    <th width="150">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var trn in tournaments)
+                 {
+                    <tr>
+                        <td>@trn.full_name</td>
+                        <td>@trn.tier</td>
+                        <td class="text-nowrap">@trn.begin_at.ToString("yyyy-MM-dd")</td>
+                        <td>@trn.status</td>
+                        <td><img src="@trn.league.image_url" width="100px" height="=100px" /></td>
+                        <td><a asp-controller="Tournaments" asp-action="Details" asp-route-id="@trn.id" class="btn btn-danger">Details</a>  </td>
+                    </tr>
+                 }
+            </tbody>
+        </table>>*@
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>$(document).ready(function () {
+        $('#myTable').DataTable();
+    });</script>

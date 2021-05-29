@@ -1,0 +1,29 @@
+﻿
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Valorant Tournaments</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/foundation-float.css">
+</head>
+<body>
+    <div class="top-bar" id="responsive-menu">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Valorant.GG</li>
+                <li><a href="/Teams">Teams</a></li>
+                <li><a href="/Tournaments">Tournaments</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid-container">
+        @RenderBody()
+    </div>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/foundation.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
