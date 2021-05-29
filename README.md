@@ -40,3 +40,6 @@
 ### Wall Street Journal Articles
 
 ![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622313491/Screenshot_2021-05-29_213752_csyvdf.png)
+
+## developed by :
+Abdulrahman Aljafar
