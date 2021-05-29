@@ -1,0 +1,23 @@
+﻿@{var lecturers = (List<LecturerModel>)ViewData["lecturers"];
+    Layout = "LecturerLayout";
+
+    <h2 style="color: #30475e"> Meet Tuwaiq's ambassadors </h2>
+    <body>
+
+        <div class=" d-flex flex-wrap">
+            @foreach (var lct in lecturers)
+            {
+                <div class="card text-center mb-4 " style="width: 12rem; margin-inline:auto">
+                    <img src="@lct.LecturerImg" class="card-img-top" alt="Tea Coal" width="100" height="180 ">
+                    <div class="card-body" style="color: #30475e ;background-color:#e7e7de ">
+                        <h5 class="card-title">@lct.LecturerName</h5>
+                        <a class="card-text" asp-controller="Courses" asp-action="Details" asp-route-id="@lct.LecturerCourse">This lecturer is teaching ' <b>@lct.LecturerCourse</b>-ID' course </a>
+                        <p class="card-text">the Free Lancing fee for this lecturer is : <b>@lct.LecturerPrice $</b></p>
+                        <a class="btn btn-secondary nav-link" asp-area="" asp-controller="Lecturers" asp-action="Details" asp-route-id="@lct.LecturerId">Details</a>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </body>
+}

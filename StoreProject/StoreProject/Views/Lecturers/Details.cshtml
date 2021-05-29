@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "LecturerLayout";
+    var lct = (LecturerModel)ViewData["DLecturer"];
+
+    <h2 style="color: #30475e"> Meet Tuwaiq's ambassador </h2>
+    <body>
+
+        <div class=" d-flex flex-wrap">
+
+            <div class="card .text-black " style="width: 30rem; margin-inline:auto">
+                <img src="@lct.LecturerImg" class="card-img-top" alt="Tea Coal" width="300" height="300 ">
+                <div class="card-body" style="color: #30475e ;background-color:#e7e7de ">
+                    <h5 class="card-title">@lct.LecturerName</h5>
+                    <p class="card-text">This Lecturer is teaching <b>@lct.LecturerCourse</b> ID course</p>
+                    <p class="card-text">the Free Lancing fee for this lecturer is : <b>@lct.LecturerPrice $</b></p>
+                    <p class="card-text"> CUSTOMERS RATE THIS AMBASSADOR : <b>@lct.LecturerRating OUT OF 10 STARS</b></p>
+                    <p class="card-text"> <b>INFO : @lct.LecturerSummary </b></p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+}

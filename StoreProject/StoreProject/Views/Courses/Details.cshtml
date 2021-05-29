@@ -1,0 +1,24 @@
+﻿@{var crs = (CourseModel)ViewData["DCourse"];
+    Layout = "CourseLayout";
+
+    <h2 style="color: #30475e"> Learn from the BEST in Tuwaiq Camp </h2>
+    <body>
+
+        <div class=" d-flex flex-wrap">
+           
+                <div class="card .text-black " style="width: 30rem; margin-inline:auto">
+                    <img src="@crs.CourseImg" class="card-img-top" alt="Tea Coal" width="300" height="300 ">
+                    <div class="card-body" style="color: #30475e ;background-color:#e7e7de ">
+                        <h5 class="card-title">@crs.CourseName</h5>
+                        <p class="card-text">This course is tought by the lecturer : <b>@crs.CourseLecturer</b></p>
+                        <p class="card-text">Buy this course for : <b>@crs.CoursePrice $</b></p>
+                        <p class="card-text"> CUSTOMERS RATE THIS COURSE : <b>@crs.CourseRating OUT OF 10 STARS</b></p>
+                        <p class="card-text">By the end of this course : <b>@crs.CourseSummary </b></p>
+                        
+                    </div>
+                </div>
+            
+        </div>
+
+    </body>
+}
