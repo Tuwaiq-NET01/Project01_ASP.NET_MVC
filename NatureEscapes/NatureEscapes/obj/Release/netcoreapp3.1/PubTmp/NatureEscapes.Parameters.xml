@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="NatureEscapes" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^/Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP\.NET_MVC/NatureEscapes/NatureEscapes/obj/Release/netcoreapp3\.1/PubTmp/Out/$" />
+  </parameter>
+</parameters>

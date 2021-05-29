@@ -5,13 +5,13 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NatureEscapes" expanded="True">
-            <Node name="NatureEscapes" expanded="True">
+            <Node name="NatureEscapes" expanded="True" selected="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
-                <Node name="Shop" expanded="True" selected="True" />
+                <Node name="Shop" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
