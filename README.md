@@ -1,13 +1,5 @@
 # Project01_ASP.NET_MVC
 
-
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
-
-
-
-
-
 فكرة المشروع
 
 موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
@@ -21,7 +13,16 @@
 - على الأقل 3 من الـViews
 - إضافة Bootstrap
 
-جزء Bonus
+<img src="img/img.png">
 
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+admin accounts should be one of the these :
+"email : taghreed@gmail.com
+password : 112233"
+"email : battal@gmail.com
+password :112233"
+
+المتدربة :تغريد القحطاني
+
+المشرفة : نورة محسن
+
+المجموعة : مجموعة نيوم 
