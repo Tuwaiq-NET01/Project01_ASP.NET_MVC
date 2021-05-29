@@ -1,27 +1,42 @@
-# Project01_ASP.NET_MVC
+# Blog-Website
+
+## Technical Used 
+* ASP.NET MVC 
+* Bootstrap 
+<br>
+
+## Top Features
+* User is able to see all articles.
+* User is able to see all authors.
+* User is able to see all Wall Street Journal articles (using API) .
+
+## Live Link
+
+### [Blog Website](https://blog-website20210529205731.azurewebsites.net/)
+
+## Image
+
+### Home Page
+
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622313122/Screenshot_2021-05-29_212753_t0zkm4.png)
+
+## 
+
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622313126/Screenshot_2021-05-29_212826_btct55.png)
+## 
+
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622313120/Screenshot_2021-05-29_212851_vnrhdk.png)
 
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
 
+### Articles
 
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622313291/Screenshot_2021-05-29_213426_yq9h9z.png)
 
+### Authors
 
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622313390/Screenshot_2021-05-29_213612_j5pkyu.png)
 
-فكرة المشروع
+### Wall Street Journal Articles
 
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
-
-متطلبات المشروع
-
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
-
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
-
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622313491/Screenshot_2021-05-29_213752_csyvdf.png)
