@@ -1,27 +1,18 @@
-# Project01_ASP.NET_MVC
+# Ezz Resturant
+
+## Website link
+
+you can see my project here [Ezz Restaurant](https://ezzrestaurant.azurewebsites.net/)
 
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/82456273/120080600-6a078c00-c0c2-11eb-923d-f80830e56409.png)
+
+![image](https://user-images.githubusercontent.com/82456273/120080452-a25a9a80-c0c1-11eb-955e-34004680e1ba.png)
+
+![image](https://user-images.githubusercontent.com/82456273/120080464-b30b1080-c0c1-11eb-848a-58dbbbcc96a0.png)
+
+![image](https://user-images.githubusercontent.com/82456273/120080474-c322f000-c0c1-11eb-9f7c-0dc2513cc7ab.png)
 
 
-
-
-
-فكرة المشروع
-
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
-
-متطلبات المشروع
-
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
-
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
-
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
