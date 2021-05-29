@@ -25,13 +25,27 @@ namespace Inventors.Controllers
              new Inventor {Id=4, Name="Karl Benz", Nationality="Germany",
                 Image ="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Carl_Benz.png/800px-Carl_Benz.png",
                 Field = "", BirthDate = new DateTime(1844, 11, 25), DeathDate = new DateTime(1929, 4, 4)} };
-       
+
 
 
         public IActionResult Index()
         {
             ViewData["InventorsList"] = InventorsList;
             return View();
+        }
+
+
+        public IActionResult Details(int? id)
+        {
+            ViewData["Inventor"] = InventorsList.Find(b => b.Id == id);
+            if (ViewData["Inventor"] == null)
+            {
+                return Content("404");
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

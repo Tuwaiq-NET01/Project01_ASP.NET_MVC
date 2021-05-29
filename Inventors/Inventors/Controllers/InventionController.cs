@@ -9,7 +9,7 @@ namespace Inventors.Controllers
 {
     public class InventionController : Controller
     {
-        List<Invention> InventorsList = new List<Invention>() {
+        List<Invention> InventionsList = new List<Invention>() {
         new Invention {Id=1, Name="Vehicle with gas engine operation",
                 Image ="https://www.daimler.com/bilder/konzern/tradition/geschichte/anfaenge-des-automobils/benz-patent-motorwagen-w768xh384-cutout.png",
                 PatentDate = new DateTime( 1886, 1, 29), PatentNumber = "37435"},
@@ -26,7 +26,22 @@ namespace Inventors.Controllers
 
         public IActionResult Index()
         {
+            ViewData["InventionsList"] = InventionsList;
             return View();
+        }
+
+        public IActionResult Details(int? id)
+        {
+            ViewData["Invention"] = InventionsList.Find(b => b.Id == id);
+            if (ViewData["Invention"] == null)
+            {
+                return Content("404");
+            }
+            else
+            {
+                return View();
+            }
+
         }
     }
 }
