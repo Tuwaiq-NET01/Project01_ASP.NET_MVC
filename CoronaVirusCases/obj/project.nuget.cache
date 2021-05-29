@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YLU2DWDP0edmVTpOF7G1TJQUK/qiHEZbQjcrFjzoa15Djd8Fe7iG3D77MA3fJzBhZn+ZOl9mVni/8q74RYEJEg==",
+  "success": true,
+  "projectFilePath": "D:\\repos\\CoronaVirusCases\\CoronaVirusCases\\CoronaVirusCases.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anas\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
