@@ -1,0 +1,26 @@
+﻿@{
+    var fav = (List<FavouriteModel>)ViewData["fav"];
+
+}
+
+<div class="card-columns">
+
+    @foreach (var item in fav)
+    {
+
+        <div class="card">
+            <img class="card-img-top" src="@item.image" alt="Picture">
+            <div class="card-body">
+                <h5 class="card-title">@item.name</h5>
+                <p class="card-text">@item.description</p>
+                <p class="card-text">@item.location</p>
+            </div>
+            <div class="card-footer">
+            </div>
+        </div>
+
+    }
+
+
+
+</div>

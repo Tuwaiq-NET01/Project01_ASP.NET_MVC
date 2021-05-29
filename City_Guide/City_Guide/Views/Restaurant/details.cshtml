@@ -1,0 +1,16 @@
+﻿@{
+    var rst = (RestaurantModel)ViewData["rests"];
+
+    }
+<div class="card align-item-center" style="width:60%; margin-left:230px">
+    <div class="card-body">
+        <h5 class="card-title">@rst.name</h5>
+        <p class="card-text">@rst.description</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Top review:<br /> @rst.reviews</li>
+        <li class="list-group-item">Location: @rst.location</li>
+        <li class="list-group-item" style="color:blue; text-decoration:underline">@rst.phoneNumber</li>
+    </ul>
+    <img class="card-img-bottom" src="@rst.image" alt="restaurant image">
+</div>

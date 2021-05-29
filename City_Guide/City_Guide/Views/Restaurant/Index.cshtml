@@ -1,0 +1,29 @@
+﻿@{
+    var restaurants = (List<RestaurantModel>)ViewData["rests"];
+
+}
+<div class="card-columns">
+
+    @foreach (var item in restaurants)
+    {
+
+        <div class="card">
+            <img class="card-img-top" src="@item.image" alt="Restaurant Picture">
+            <div class="card-body">
+                <h5 class="card-title">@item.name</h5>
+                <p class="card-text">@item.description</p>
+                <p class="card-text">@item.location</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">
+                    <button type="button" class="btn btn-info">
+                        <a href="/restaurant/details/@item.Id" style="color:white">More information</a>
+                    </button>
+                    <button type="button" class="btn btn-danger" style="margin-left:10px"><a href="/favourite/index/@item.Id" style="color:white"></a>♥</button>
+                </small>
+            </div>
+        </div>
+
+    }
+
+</div>
