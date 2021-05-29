@@ -21,7 +21,7 @@ namespace Project01_ASP.NET_MVC.Controllers
             };
         private List<Book> books = new List<Book>()
             {
-                new Book(){Id = 1 , name = "XV6 Operating System" , author = authors[1], price = 75, image ="https://lh3.googleusercontent.com/proxy/q1Tsqo23IkdoihHnE4Z1SwdFpiZcv8fqUUGtq4t5Oe9vFSJP-3MaBijQrsClm4wUF_oNiermdqrhzwWtL3lyW2XrEU7_fSjg_BaTJ2-U6ioG4bCsLeo"},
+                new Book(){Id = 1 , name = "XV6 Operating System" , author = authors[1], price = 75, image ="https://lh3.googleusercontent.com/proxy/YHyqn9zi1XW4jqqGPoYvDyjDuxMiMiuYxmXVS4zPUeqeXtUPtOQCox5qFHmDVHvyiy3MJTfaO93KMdoqFL116viiVWODPjnI9lwGfWNbmM9jeWiKeuk"},
                 new Book(){Id = 2 , name = "Clean Code" , author = authors[3], price = 20, image ="https://images-na.ssl-images-amazon.com/images/I/41yafGMO+rL._SX258_BO1,204,203,200_.jpg"},
                 new Book(){Id = 3 , name = "Intro to Algorithms" , author = authors[4], price = 35, image ="https://images-na.ssl-images-amazon.com/images/I/41T0iBxY8FL._SX440_BO1,204,203,200_.jpg"},
                 new Book(){Id = 4 , name = "Refactoring" , author = authors[1], price = 25, image ="https://images-na.ssl-images-amazon.com/images/I/41trAWIzKAL._SX401_BO1,204,203,200_.jpg"},
@@ -31,7 +31,6 @@ namespace Project01_ASP.NET_MVC.Controllers
                 new Book(){Id = 8 , name = "JAVA" , author = authors[0], price = 50, image ="https://images-na.ssl-images-amazon.com/images/I/51EZ4Mzhz5L.jpg"},
                 new Book(){Id = 8 , name = "using openMP" , author = authors[2], price = 35, image ="https://images-na.ssl-images-amazon.com/images/I/51O3HRtQVVL.jpg"},
                 new Book(){Id = 9 , name = "Raspberry Pi" , author = authors[5], price = 25, image ="https://images-na.ssl-images-amazon.com/images/I/41ICEKEY5eL.jpg"},
-                new Book(){Id = 10 , name = "book" , author = authors[2], price = 75, image ="https://lh3.googleusercontent.com/proxy/q1Tsqo23IkdoihHnE4Z1SwdFpiZcv8fqUUGtq4t5Oe9vFSJP-3MaBijQrsClm4wUF_oNiermdqrhzwWtL3lyW2XrEU7_fSjg_BaTJ2-U6ioG4bCsLeo"},
                 new Book(){Id = 11 , name = "C++20 Recipes" , author = authors[4], price = 30, image ="https://m.media-amazon.com/images/I/41MZo+Qib7L.jpg"},
             };
 

@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Project01_ASP.NET_MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Project01_ASP.NET_MVC.Controllers
@@ -19,14 +21,15 @@ namespace Project01_ASP.NET_MVC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        HttpClient client = new HttpClient();
+
+        public async Task<IActionResult> IndexAsync()
         {
-            dynamic stuff = JObject.Parse("{ 'Name': 'Jon Smith', 'Address': { 'City': 'New York', 'State': 'NY' }, 'Age': 42 }");
 
-            string name = stuff.Name;
-            string address = stuff.Address.City;
+            string response = await client.GetStringAsync("https://type.fit/api/quotes");
+            List<Quotes> quotes = JsonConvert.DeserializeObject<List<Quotes>>(response);
 
-            ViewData["namee"] = name;
+            ViewData["quotes"] = quotes;
             return View();
         }
 
