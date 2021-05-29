@@ -1,0 +1,42 @@
+﻿@{
+    var items = (List<CategorieModel>)ViewData["Categories"];
+    Layout = "WebLayout";
+}
+<div class="container">
+    <div class="row">
+        <h2 class="center">Trending Now</h2>
+        <div class="content section" style="max-width:500px">
+            <img class="mySlides" src="https://images.unsplash.com/photo-1580894529573-fc5e3f78ba06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG5pa2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" style="width:100%">
+            <img class="mySlides" src="https://images.unsplash.com/photo-1524532787116-e70228437bbe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5pa2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" style="width:100%">
+            <img class="mySlides" src="https://images.unsplash.com/photo-1597464993881-035964af094d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80" style="width:100%">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        @foreach (var item in items)
+        {
+            <div class="col-sm-4">
+                <h4>@item.Categorie</h4>
+                <img style="width:400px;height:300px" src="@item.Img" />
+            </div>
+        }
+    </div>
+</div>
+<script>var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }</script>
+
+
+
+

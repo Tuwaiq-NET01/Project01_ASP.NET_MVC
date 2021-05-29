@@ -1,0 +1,22 @@
+﻿@{
+    var items = (List<MenProudctsModel>)ViewData["MenProducts"];
+    Layout = "WebLayout";
+}
+    <div class="container">
+        <div class="row">
+            @foreach (var item in items)
+            {
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="@item.Img">
+                        <div class="card-body">
+                            <p class="card-text">Type: @item.Type</p>
+                            <p class="card-text">Size: @item.Size</p>
+                            <p class="card-text">Price: @item.Price SAR</p>
+                            <button type="button" class="btn btn-outline-success">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>

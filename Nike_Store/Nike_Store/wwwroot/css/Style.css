@@ -1,0 +1,70 @@
+﻿body {
+    height: 100%;
+}
+.navbar {
+    min-height: 50px;
+}
+.navbar .navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    margin
+}
+.bg {
+    background-image: url("https://images.unsplash.com/photo-1520316587275-5e4f06f355e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80");
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#h2 {
+    color: white;
+    margin-left: 500px;
+    font-size: 200px;
+    margin-bottom: -45px;
+}
+#h6_2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#h6_2 span {
+        color: #ff571a;
+    }
+#img{
+   margin-left: 650px;
+   margin-bottom:-50px;
+}
+.btn a {
+    color: white;
+}
+.btn a:hover {
+  color: #ff571a;
+  text-decoration: none;
+}
+i{
+    padding-left: 90%;
+    color: #ff571a;
+    font-size: 40px;
+    padding-bottom:5%;
+}
+.col-sm-4 {
+    padding-top: 200px;
+    padding-left: 40px;
+}
+.col-sm-4 h4 {
+    padding-left: 150px;
+}
+.mySlides {
+    display: none;
+}
+.center
+{
+    padding-left: 100px;
+    padding-top: 200px;
+}
+.content {
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
