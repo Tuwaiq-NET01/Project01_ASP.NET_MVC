@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Blog_Website</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand text-uppercase  Home-nav " href="/">Blog</a>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto " >
+
+                        <li class="nav-item">
+                            <a class="nav-link Products-nav" href="/Articles">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link Products-nav" href="/Authors">Authors</a>
+                        </li>
+                        @if (@ViewData["Title"] == "Home Page")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link About-nav" href="#section-1">About</a>
+                            </li>
+                            <li class="nav-item  nav-clor">
+                                <a class="nav-link why-nav" href="#section-2">Why Us</a>
+                            </li>
+
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <hr />
+
+    <div class="footer1">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 item text">
+                        <h4>About</h4>
+                        <p>This is a blog where you can write about any topic you would like to share with other. It is an opprtunity for you to express your feelings, emotions and opinions about the posted topics, too by posting a reply.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                       
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h5> QUICK LINKS</h5>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/Articles">Articles</a></li>
+                            <li><a href="/Authors">Authors</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <p class="copyright">Blog Website © 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
