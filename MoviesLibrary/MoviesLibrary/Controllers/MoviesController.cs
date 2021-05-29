@@ -22,7 +22,7 @@ namespace MoviesLibrary.Controllers
         
         public IActionResult Details(int? id)
         {
-
+            Console.WriteLine("asd");
             MovieModel movie = moviesList.Find(m => m.Id == id);
             
             if (movie == null)
