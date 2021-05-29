@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CY224GO62OgjDOOIZvF6a6Pn/o3Ubh8Hzvl41FOAv2xa/Rd37coKceAREBwSz8KutGtMibwLtr/SIXiPfGYOgQ==",
+  "success": true,
+  "projectFilePath": "D:\\Business\\المعسكر\\الاسبوع 6\\DotNET Project\\Project01_ASP.NET_MVC\\MoviesLibrary\\MoviesLibrary\\MoviesLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IBRA\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
