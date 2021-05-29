@@ -1,18 +1,18 @@
-# Project01_ASP.NET_MVC
+<h1 align="center">
 
+Project01_ASP.NET_MVC
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
+</h1>
 
+<div dir="rtl">
 
+##  الإسم : نوره المطيري
 
+## فكرة المشروع
 
+موقع الكتروني لبيع الكتب بإستخدام `ASP.NET MVC`
 
-فكرة المشروع
-
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
-
-متطلبات المشروع
+## متطلبات المشروع
 
 باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
 
@@ -21,7 +21,7 @@
 - على الأقل 3 من الـViews
 - إضافة Bootstrap
 
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+<p align="center">
+<img src="https://raw.githubusercontent.com/NorahMAlmutairi/Project01_ASP.NET_MVC/main/bookstore.png" alt="preview" width="600px">
+</p>
+</div>
