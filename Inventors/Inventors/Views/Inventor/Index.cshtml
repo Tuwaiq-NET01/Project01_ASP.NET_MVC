@@ -5,20 +5,25 @@
     var inventors = (List<Inventor>)ViewData["InventorsList"];
 }
 
-<div class="card-deck">
-
-    @foreach (var inventor in inventors)
-    {
-        <div class="card">
-            <img class="card-img-top" src="@inventor.Image" alt="Card image cap" >
-            <div class="card-body">
-                <h5 class="card-title">@inventor.Name</h5>
-                <p class="card-text">Bitrht Date: @inventor.BirthDate.Date</p>
-                <p class="card-text">Death Date: @inventor.DeathDate.Date</p>
-                <p class="card-text">Nationality: @inventor.Nationality</p>
-                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
-                <a href="Inventor/Details/?id=@inventor.Id">Read More</a>
+<div class="container">
+    <div class="row">
+        @foreach (var inventor in inventors)
+        {
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-block">
+                        <img class="card-img-top" src="@inventor.Image" alt="Card image cap" height="400">
+                        <div class="card-body">
+                            <h5 class="card-title">@inventor.Name</h5>
+                            <p class="card-text">Bitrht Date: @inventor.BirthDate.Date.ToString("d")</p>
+                            <p class="card-text">Death Date: @inventor.DeathDate.Date.ToString("d")</p>
+                            <p class="card-text">Nationality: @inventor.Nationality</p>
+                            @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+                            <a href="Inventor/Details/?id=@inventor.Id">Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> 
-    }
-</div>
+        }
+    </div>
+    </div>
