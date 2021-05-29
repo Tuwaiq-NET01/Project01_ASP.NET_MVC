@@ -1,27 +1,31 @@
 # Project01_ASP.NET_MVC
 
+<br>
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
-
-
+# ARTT (Art Tuwaiq)
 
 
+### ARRT is website to present artworks using "Art Institute of Chicago API" which can be found [here](https://api.artic.edu/docs/#introduction)
 
-فكرة المشروع
+<br>
 
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
+# Technology used
+* ASP.NET MVC 
+* Bootstrap 
+  
+<br>
 
-متطلبات المشروع
+# Demo 
 
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
+![alt text](https://github.com/aldundur-Mansour/Project01_ASP.NET_MVC/blob/main/DemoP01.gif?raw=true)
 
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
+<br>
 
-جزء Bonus
+# Progress 
 
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+- [x] 2 Controllers 
+- [x] 2 Models 
+- [x] 3 View
+- [x] Bootstrap
+- [x] API 
+- [ ] EntityFramework

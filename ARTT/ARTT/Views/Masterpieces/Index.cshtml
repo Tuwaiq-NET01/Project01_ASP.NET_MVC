@@ -1,0 +1,37 @@
+﻿@{
+    List<MasterpieceModel> m = (List<MasterpieceModel>) ViewData["artworks"];
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+
+</head>
+<body>
+<div>
+    <div class="container ">
+        <div class="row">
+            @foreach (var artwork in m)
+            {
+                string o = $"https://www.artic.edu/iiif/2/{artwork.imgID}/full/843,/0/default.jpg";
+
+                <div class="d-flex">
+                    <div class="col-4">
+                        <div class="card m-3" style="width: 18rem; background-color: rgba(27, 28, 32, 0.45)">
+                            <img class="card-img-top  h-50"src=@o alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: rgba(186,85,211, 0.8) ; font-weight: 700; text-align: center; "> @artwork.title </h5>
+                              
+                                <p class="card-text text-white" style="font-size: 0.8em; text-align: center"> Place Of origin: @artwork.category_titles </p>
+                                <a href="./Masterpieces/Details/@artwork.id" class="btn btn-sm align-self-center text-white " style="background-color: rgba(186,85,211, 0.8)  "> Show details </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+</body>
+</html>

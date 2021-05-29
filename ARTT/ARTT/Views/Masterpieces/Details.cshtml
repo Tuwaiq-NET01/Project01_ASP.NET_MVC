@@ -1,0 +1,36 @@
+﻿
+@{
+    MasterpieceModel found = (MasterpieceModel) ViewData["found"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+  
+</head>
+<body>
+<div class="container" style="width: 800px; ">
+  @{string o = $"https://www.artic.edu/iiif/2/{found.imgID}/full/843,/0/default.jpg";}
+  <div class="card"  style="width: 800px; ">
+    <img class="card-img-top" src=@o alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title " style="text-align: center">@found.title</h5>
+      <br>
+      <p class="card-text "> <span style="color:rgba(186,85,211, 0.8) ;font-weight: bold;"> Place Of Origin </span>@found.place_of_origin</p>
+    </div>
+    <ul class="list-group list-group-flush align-content-center">
+      <li class="list-group-item"><span style="color:rgba(186,85,211, 0.8) ;font-weight: bold;"> Artowrk#  </span> [@found.id]</li>
+      <li class="list-group-item"><span style="color:rgba(186,85,211, 0.8) ;font-weight: bold;"> Artist#  </span> [@found.artist_id]</li>
+      <li class="list-group-item"><span style="color:rgba(186,85,211, 0.8) ;font-weight: bold;"> Artist name  </span> [@found.artist_title]</li>
+      <li class="list-group-item"> <span style="color:rgba(186,85,211, 0.8) ;font-weight: bold;"> Category titles</span> [@found.category_titles]</li>
+    </ul>
+    <div class="card-body">
+      <a asp-controller="Masterpieces" asp-action="Index" class="btn btn-lg text-white " style="background-color: rgb(186,85,211) "> Back</a>
+   
+    </div>
+  </div>
+</div>
+</body>
+</html>
