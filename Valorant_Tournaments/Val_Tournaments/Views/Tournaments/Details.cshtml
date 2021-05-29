@@ -41,31 +41,6 @@
                 <li>Tournament Tier: @tournament.Tier</li>
                 <li>Tournament Logo: <img width="100px" height="=100px" src="@tournament.Logo"/> </li>
             </ul>
-            @*<table id="myTable" class="table-striped table-bordered table-hover">
-            <thead class="bg-dark text-light">
-                <tr>
-                    <th width="300">Tournament Name</th>
-                    <th width="100">Tier</th>
-                    <th>Start Date</th>
-                    <th>Status</th>
-                    <th width="150">Logo</th>
-                    <th width="150">Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var trn in tournaments)
-                 {
-                    <tr>
-                        <td>@trn.full_name</td>
-                        <td>@trn.tier</td>
-                        <td class="text-nowrap">@trn.begin_at.ToString("yyyy-MM-dd")</td>
-                        <td>@trn.status</td>
-                        <td><img src="@trn.league.image_url" width="100px" height="=100px" /></td>
-                        <td><a asp-controller="Tournaments" asp-action="Details" asp-route-id="@trn.id" class="btn btn-danger">Details</a>  </td>
-                    </tr>
-                 }
-            </tbody>
-        </table>>*@
 
         </div>
     </div>

@@ -1,27 +1,25 @@
-# Project01_ASP.NET_MVC
+<div dir="rtl">
+
+# Valorant-GG 
+## وصف المشروع 
+### رابط المشروع 
+https://valorant-gg.azurewebsites.net/
+
+### فكرة المشروع
+ هي انشاء صفحة ويب يستعرض منها المتابعين للرياضات الإلكترونية البطولات البطلولات المقامة للعبة Valorant.
+ 
+### ما هي Valorant
+ڤالورانت ‏هي لعبة تصويب تنافسية تكتيكية قائمة على نمط 5 ضد 5 متعددة اللاعبين. 
 
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
+## الـ API المستخدم 
+تم الاعتماد في هذا المشروع على استيراد البيانات عن طريق استخدام الـ API 
+ **PandaScore REST API for Valorant  (2.21.0)**
+ https://developers.pandascore.co/doc/index_valorant.htm
+ 
+## التقنيات المستخدمة 
 
-
-
-
-
-فكرة المشروع
-
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
-
-متطلبات المشروع
-
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
-
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
-
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+ - [ASP.Net Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-5.0)
+ - [Bootstrap](https://getbootstrap.com/)
+ - [DataTables](https://datatables.net/)
+</div>
