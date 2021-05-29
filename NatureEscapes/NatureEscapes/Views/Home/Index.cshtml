@@ -2,7 +2,6 @@
     ViewData["Title"] = "Home Page";
     var reviews = (List<ReviewModel>)ViewData["reviews"];
 }
-
 <section class="landing">
     <div class="landing-txt leading-loose">
         <h1 class="text-6xl text-center mb-4">Nature Escapes</h1>
@@ -11,7 +10,7 @@
             <span class="text-5xl font-serif and-symbol">&</span>
             <br />  Beauty Products
         </h4>
-        <a class="text-1xl italic text-gray-600 gap-y-2" id="arrow">Start shopping →</a>
+        <a class="text-1xl italic text-gray-600 gap-y-2" id="arrow" href="/shop/index">Start shopping →</a>
     </div>
     <div>
         <div class="landing-img landing-img1"></div>
@@ -28,7 +27,7 @@
     </div>
     <div class="grid grid-cols-7 mt-4">
         <div class="text-lg">
-            <span class=" transform -rotate-90 pl-16 text-center mt-48 italic">Shop all products</span>
+            <div class=" transform -rotate-90 pl-16 text-center mt-48 italic">Shop all products</div>
         </div>
         <div class="col-span-2">
             <span class="font-sans text-sm">01</span>

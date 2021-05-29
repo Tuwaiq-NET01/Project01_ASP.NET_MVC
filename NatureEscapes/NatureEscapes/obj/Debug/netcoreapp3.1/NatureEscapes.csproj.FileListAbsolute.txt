@@ -33,7 +33,6 @@
 /Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP.NET_MVC/NatureEscapes/NatureEscapes/obj/Debug/netcoreapp3.1/NatureEscapes.pdb
 /Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP.NET_MVC/NatureEscapes/NatureEscapes/obj/Debug/netcoreapp3.1/NatureEscapes.genruntimeconfig.cache
 /Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP.NET_MVC/NatureEscapes/NatureEscapes/obj/Debug/netcoreapp3.1/NatureEscapes.csproj.CopyComplete
-/Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP.NET_MVC/NatureEscapes/NatureEscapes/obj/Debug/netcoreapp3.1/Razor/Views/Community/Index.cshtml.g.cs
 /Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP.NET_MVC/NatureEscapes/NatureEscapes/obj/Debug/netcoreapp3.1/Razor/Views/Shop/Details.cshtml.g.cs
 /Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP.NET_MVC/NatureEscapes/NatureEscapes/obj/Debug/netcoreapp3.1/Razor/Views/Shop/Index.cshtml.g.cs
 /Users/hanans/Desktop/Tuwaiq/projects/Project01_ASP.NET_MVC/NatureEscapes copy/NatureEscapes/bin/Debug/netcoreapp3.1/appsettings.Development.json
