@@ -1,0 +1,39 @@
+﻿@{
+    var sweets = (List<SweetAndFoodModel>)ViewData["Sweets"];
+}
+
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th scope="col">Id</th>
+            <th></th>
+            <th scope="col">Item-Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            
+        </tr>
+    </thead>
+        <tbody>
+            @foreach (var sweet in sweets)
+            {
+            <tr class="">
+                <th></th>
+                <th scope="row">@sweet.Id</th>
+                <th></th>
+                <td>@sweet.Name</td>
+                <td>@sweet.Description</td>
+                <td class="text-nowrap">@sweet.Price ريال</td>
+                <td><img src="@sweet.Image" width="100" height="100" /></td>
+               
+
+            </tr>
+            }
+        </tbody>
+</table>
+<div>
+    <a href="/SweetsAndFoods/" />
+    <button type="button" class="btn btn-danger">Back to Menu of Sweets And Foods</button>
+    </a>
+</div>

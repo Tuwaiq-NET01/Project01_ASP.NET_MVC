@@ -1,0 +1,39 @@
+﻿@{
+    var coffeeHot = (List<CoffeeModel>)ViewData["coldCoffeeModel"];
+}
+
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th scope="col">Id</th>
+            <th></th>
+            <th scope="col">Item-Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Coffee in coffeeHot)
+        {
+        <tr class="">
+            <th></th>
+            <th scope="row">@Coffee.Id</th>
+            <th></th>
+            <td>@Coffee.Name</td>
+            <td>@Coffee.Description</td>
+            <td class="text-nowrap">@Coffee.Price ريال</td>
+            <td><img src="@Coffee.Image" width="100" height="100" /></td>
+            <th></th>
+
+        </tr>
+        }
+    </tbody>
+</table>
+<div>
+<a href="/Coffees/"/>
+    <button type="button" class="btn btn-danger">Back to Menu of Coffee</button>
+</a>
+</div>
