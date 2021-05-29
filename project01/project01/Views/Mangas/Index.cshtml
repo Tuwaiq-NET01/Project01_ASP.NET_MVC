@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@{
+    List<MangaModel> manga = (List<MangaModel>)ViewData["MangaList"];
+}
+
+<h2>Manga List</h2>
+
+
+<br />
+<br />
+<table style="width:100%" class="table table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Rate</th>
+            <th>Image</th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (MangaModel prd in manga)
+    {
+<tr>
+    <th scope="row">@prd.Id</th>
+    <td>@prd.Name</td>
+    <td>@prd.Type</td>
+    <td>@prd.Rate</td>
+    <td> <img style="height: 100px; width:auto" src=@prd.Image alt=@prd.Name /></td>
+    <td> <button><a href="/mangas/check/@prd.Id">Show </a> </button> </td>
+</tr>
+    }
+</table> 

@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@{
+    List<AnimeModel> Anime = (List<AnimeModel>)ViewData["AnimeList"];
+}
+
+<h2>Anime List</h2>
+
+
+
+<br />
+<br />
+<table style="width:100%" class="table table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Rate</th>
+            <th>Image</th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (AnimeModel prd in Anime)
+    {
+        <tr>
+            <th scope="row">@prd.Id</th>
+            <td>@prd.Name</td>
+            <td>@prd.Type</td>
+            <td>@prd.Rate</td>
+            <td> <img style="height: 100px; width:auto" src=@prd.Image alt=@prd.Name /></td>
+            <td> <button><a href="/animes/check/@prd.Id">Show </a> </button> </td>
+        </tr>
+    }
+</table> 

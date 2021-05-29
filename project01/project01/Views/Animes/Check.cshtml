@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Check";
+}
+@{
+
+    AnimeModel anime = (AnimeModel)ViewData["AnimeList"];
+    var space = "\t";
+}
+
+<h2>@anime.Name</h2>
+
+<br />
+<br />
+<br />
+<div style=" display:flex">
+    <figure class="figure">
+        <img src="@anime.Image" class="figure-img img-fluid rounded" alt="@anime.Name">
+    </figure>
+    <div style=" padding-left:3em">
+        <h3>  <span style="padding-left: 0.3em" class="badge bg-secondary">@anime.Rate</span>@space Description:</h3>
+        <p style="width:30em">@anime.Description</p>
+    </div>
+</div>
+<br />
+<br />
