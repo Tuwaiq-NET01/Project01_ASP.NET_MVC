@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    var Book = (BookModel)ViewData["Book"];
+}
+<h1>
+    @Book.bookName
+</h1>
+<img src="@Book.image" />
+<h2>
+    By: @Book.authorName
+</h2>
+<h3>
+    Published by: @Book.publisher in the year of @Book.releaseYear. The book price is $@Book.price
+</h3>
