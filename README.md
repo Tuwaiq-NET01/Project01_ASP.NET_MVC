@@ -1,11 +1,27 @@
-# Project01_ASP.NET_MVC
+# Bookstore
 
+### PROJECT1: 
 ASP.NET Core 5 MCV Project 
 
-Student: Mohammed Rashed Albalawi.
-Group: Al-qiddiyah.
-Group Instructor: Noorah Abdullah.
+<br />
+<b> Student:</b>  Mohammed Rashed Albalawi.
+<br />
+<b> Group:</b>  Al-qiddiyah.
+<br />
+<b> Group Instructor:</b>  Noorah Abdullah.
 
+<br />
+
+## DEMO: 
+<br />
+
+![asp.net gif](./asp.gif)
+
+<br />
+
+## Technologies used: 
+- ASP.NET CORE 5 MVC 
+- Bootstrap.
 
 <br />
 <hr />
