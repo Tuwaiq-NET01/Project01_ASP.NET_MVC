@@ -4,10 +4,6 @@
 تعلم كيفية عمل Fork والرفع على Github 
 ![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
 
-
-
-
-
 فكرة المشروع
 
 موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
@@ -25,3 +21,8 @@
 
 - عمل API
 - عمل علاقات Relations بين الـModels باستخدام EntityFramework
+
+
+# Demo
+
+![alt text](https://github.com/anas-alhmoud/Project01_ASP.NET_MVC/blob/main/demo.gif?raw=true)
