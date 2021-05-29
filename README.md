@@ -1,11 +1,16 @@
 # Project01_ASP.NET_MVC
 
-<br>
+<p align="center">
+  <a href="https://github.com/aldundur-Mansour/Project01_ASP.NET_MVC">
+    <img src="ARTT/ARTT/wwwroot/assets/ARTTLOGO.svg" alt="Logo" width="500" height="500">
+  </a>
+
+</p>
 
 # ARTT (Art Tuwaiq)
 
 
-### ARRT is website to present artworks using "Art Institute of Chicago API" which can be found [here](https://api.artic.edu/docs/#introduction)
+### ARTT is website to present artworks using "Art Institute of Chicago API" which can be found [here](https://api.artic.edu/docs/#introduction)
 
 <br>
 
