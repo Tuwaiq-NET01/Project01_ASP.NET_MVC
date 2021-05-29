@@ -1,0 +1,34 @@
+﻿@{
+    var book = (BooksModel) ViewData["book"];
+}
+
+<body>
+<div>
+    @if (book != null)
+     {
+         <table class="table table-striped align-middle">
+             <tr>
+                 <th>ID</th>
+                 <th>Description</th>
+                 <th>Portion</th>
+                 <th>Image</th>
+                 <th>Price</th>
+             </tr>
+             <tr>
+                 <td>@book.id</td>
+                 <td>@book.description</td>
+                 <td>@book.author g</td>
+                 <td><img src=@book.image height="100" width="100" alt=""/></td>
+                 <td>@book.price</td>
+             </tr>
+         </table>
+         
+         <div class="text-center mt-5"><a class="" asp-area="" asp-controller="Coffee" asp-action="Index">Return to Coffee List</a></div>
+     }
+     else
+     {
+         <h1 class="text-center mt 2">Error 404</h1>
+         <div class="text-center mt-5"><a class="" asp-area="" asp-controller="Books" asp-action="Index">Return to Books List</a></div>
+     }
+</div>
+</body>

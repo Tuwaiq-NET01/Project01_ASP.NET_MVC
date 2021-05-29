@@ -1,0 +1,29 @@
+﻿@{
+    var booksList = (List<BooksModel>) ViewData["BooksList"];
+}
+
+<body>
+<div class="container">
+    <h1>here are the list of the books we provide:</h1>
+</div>
+<table class="table text-center table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+        <th>author</th>
+        <th>Image</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var book in booksList)
+    {
+        <tr>
+            <td class="align-middle">@book.id</td>
+            <td class="align-middle"><a href="./Books/Details/@book.id">@book.description</a></td>
+            <td class="align-middle">@book.author</td>
+            <td class="align-middle"> <img src=@book.image height="100" width="100" alt=""/> </td>
+            <td class="align-middle">@book.price</td>
+        </tr>
+        <br/>
+    }
+</table>
+</body>

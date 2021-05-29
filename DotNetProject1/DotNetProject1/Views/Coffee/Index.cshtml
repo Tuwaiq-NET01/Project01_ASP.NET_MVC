@@ -1,0 +1,29 @@
+﻿@{
+    var coffeeList = (List<CoffeeModel>) ViewData["CoffeeList"];
+}
+
+<body>
+<div class="container">
+    <h1>here are the list of the coffee we provide:</h1>
+</div>
+<table class="table text-center table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+        <th>Portion</th>
+        <th>Image</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var coffee in coffeeList)
+    {
+        <tr>
+            <td class="align-middle">@coffee.id</td>
+            <td class="align-middle"><a href="./Coffee/Details/@coffee.id">@coffee.description</a></td>
+            <td class="align-middle">@coffee.portionSize g</td>
+            <td class="align-middle"> <img src=@coffee.image height="100" width="100" alt=""/> </td>
+            <td class="align-middle">@coffee.price</td>
+        </tr>
+        <br/>
+    }
+</table>
+</body>
