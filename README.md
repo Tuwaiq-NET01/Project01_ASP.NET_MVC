@@ -13,6 +13,6 @@ My Kitchen is a website made with ASP.NET MVC that Contains recipes for salads, 
 ## Demo:
 ![](https://e.top4top.io/p_19752msj51.gif)
 ## Credits:
-Trainee: Shahad Alshehri.
-Superviser: Noura Abdullah
-Group: Qiddiya
+<div>Trainee: Shahad Alshehri.</div>
+<div>Superviser: Noura Abdullah.</div>
+<div>Group: Qiddiya.</div>
