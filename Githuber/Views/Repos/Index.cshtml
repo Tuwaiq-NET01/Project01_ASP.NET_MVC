@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Home Page";
+    Item repo = (Item)ViewData["repo_info"];
+}
+<div class="container">
+
+    <div class="card text-white bg-info mb-3" >
+        <div class="card-body">
+            <h5 class="card-title font-weight-bold" style="font-size: 2rem;"> @repo.name </h5>
+            <p class="card-text text-start"> @repo.description hello </p>
+        </div>
+        <ul class="list-group list-group-flush ">
+            <li class="list-group-item bg-info"> Languge       : @repo.language </li>
+            <li class="list-group-item bg-info"> License       : @if(repo.license != null){ @repo.license.name}else{ <span>None</span> } </li>
+            <li class="list-group-item bg-info"> Github page   : <a href="@repo.html_url" style="color: white;">@repo.html_url</a> </li>
+            <li class="list-group-item bg-info"> Clone it : <code class="custom-color"> git clone @repo.clone_url </code> </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    
+}
+
+<div class="container text-center pt-5">
+    <h3 class="custom-color">Find Your Next Open Source Project</h3>
+    <p class="custom-color"> Search for a topic that interests you, and start hacking.</p>
+
+    <form method="GET" asp-controller="Home" asp-action="Search" >
+    <div class="input-group">
+        <input type="search" class="form-control rounded" placeholder="Search" name="topic" aria-label="Search"
+            aria-describedby="search-addon" />
+        <a><button type="submit" class="btn custom-color ml-1" style="border: 1px solid white;">search</button></a>
+    </div>
+    </form>
+
+</div>

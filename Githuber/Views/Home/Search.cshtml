@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Home Page";
+    List<Item> projects = ((Root)ViewData["api_date"]).items;
+}
+<div class="container">
+<div class="row justify-content-center">
+    @foreach (var item in projects)
+    {
+        <div class="card border-info m-1" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title text-center"> @item.name </h5>
+                <p class="card-text"> @item.description </p>
+            </div>
+                <a href="/Repos?url=@item.url" class="card-link text-center pb-3">
+                <button type="button" class="btn btn-outline-info">Details</button>
+                 </a>
+        </div>
+    }
+</div>
+</div>

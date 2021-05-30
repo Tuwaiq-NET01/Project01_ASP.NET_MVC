@@ -1,27 +1,28 @@
-# Project01_ASP.NET_MVC
+<div dir="rtl">
 
+# Githuber
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
+محرك بحث للمشاريع مفتوحة المصدر على منصة Github المبنية بلغة <span dir="ltr">C#</span>
 
+## التقنيات المستخدمة في المشروع
 
+- ASP.NET
+- REST API ( Github api)
+  
+## Screenshots
 
+![home](screenshots/home_index.png)
 
+![search](screenshots/home_search.png)
 
-فكرة المشروع
+![repo](screenshots/repo_index.png)
 
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
+#
 
-متطلبات المشروع
+### **اسم المتدرب : عبدالعزيز الاسمري**
 
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
+### **اسم المشرفة: غادة المطيري**
 
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
-
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+### **اسم المجموعة: السودة**
+ 
+</div>
