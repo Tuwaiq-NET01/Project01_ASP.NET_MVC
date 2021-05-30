@@ -1,0 +1,13 @@
+﻿@{
+    var q = (Question)ViewData["question"];
+}
+
+
+<div class="card" style="width: 35rem;">
+    <div class="card-body">
+        <h5 class="@q.Id">@q.question</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@q.category.Name</h6>
+        <p class="card-text">@q.Answer</p>
+       
+    </div>
+</div>

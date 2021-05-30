@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{7FFBD31F-8530-4D82-BB96-D5F45FF64C2C}|Default">
+  <MonoDevelop.Ide.ItemProperties.TuwaiqTriviaGame PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TuwaiqTriviaGame/Startup.cs">
+    <Files>
+      <File FileName="TuwaiqTriviaGame/Controllers/QuestionController.cs" Line="33" Column="29" />
+      <File FileName="TuwaiqTriviaGame/Views/Question/Index.cshtml" Line="23" Column="29" />
+      <File FileName="TuwaiqTriviaGame/Views/Question/ShowAnswer.cshtml" Line="11" Column="8" />
+      <File FileName="TuwaiqTriviaGame/Program.cs" Line="1" Column="1" />
+      <File FileName="TuwaiqTriviaGame/Startup.cs" Line="53" Column="51" />
+      <File FileName="TuwaiqTriviaGame/Views/Question/DeleteQuestion.cshtml" Line="11" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TuwaiqTriviaGame" expanded="True">
+            <Node name="TuwaiqTriviaGame" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
