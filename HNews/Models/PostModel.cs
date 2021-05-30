@@ -30,7 +30,7 @@ namespace HNews.Models
         
         public IEnumerable<PostModel> Comments { get; set; }
         
-        public string WebsiteName => new Uri(Url).Host.Replace("www.", "");
+        public string WebsiteName => Uri.IsWellFormedUriString(Url, UriKind.Absolute) ? new Uri(Url).Host.Replace("www.", "") : "";
 
         public string GetRelativePostDate()
         {
