@@ -1,27 +1,40 @@
-# Project01_ASP.NET_MVC
+### Project01_ASP.NET_MVC
+
+[Project requirements](https://github.com/Tuwaiq-NET01/Project01_ASP.NET_MVC/blob/main/README.md)
 
 
-تعلم كيفية عمل Fork والرفع على Github 
-![](https://paper-attachments.dropbox.com/s_0D83677DA2361FF06005508CF783B770B0850A1F7D5189177C2769198E3AE90A_1622061898654_fork.png)
+# HNews
+
+view [Hacker news](https://en.wikipedia.org/wiki/Hacker_News) top/newest posts, discussions and user profiles.
+
+built with ASP.NET MVC using the [hacker news api](https://github.com/HackerNews/API).
+
+Models:
+- UserModel
+- PostsModel
+
+Controllers:
+- UserController
+- PostsController
+
+Views:
+- Top/new posts view
+- Post details view
+- User  Profile view
 
 
 
+### Live demo
+https://hnews-app.azurewebsites.net/
 
+#
 
-فكرة المشروع
+<div dir="rtl"> 
 
-موقع متكامل على حسب اختيارك باستخدام ASP.NET MVC على سبيل المثال: مكتبة إلكترونية، تسوق إلكتروني… 
+###  معلومات المتدرب
 
-متطلبات المشروع
+- اسم المتدرب: مريم الردادي
+- اسم المشرف: غادة المطيري
+- اسم الفريق: السودة
 
-باستخدام المفاهيم الأساسية لـMVC قم بإنشاء تطبيق ASP.NET MVC يحتوي على التالي:
-
-- على الأقل 2 من الـControllers 
-- على الأقل 2 من الـModels
-- على الأقل 3 من الـViews
-- إضافة Bootstrap
-
-جزء Bonus
-
-- عمل API
-- عمل علاقات Relations بين الـModels باستخدام EntityFramework
+</div>
