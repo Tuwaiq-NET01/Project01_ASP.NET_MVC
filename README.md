@@ -8,7 +8,7 @@
 ![Capture1](https://user-images.githubusercontent.com/82495629/120091996-8c2bf900-c118-11eb-802a-45e1bd602741.PNG)
 
 
-#### This page show more information about the place. 
+#### This page shows more information about the place. 
 ![Capture2](https://user-images.githubusercontent.com/82495629/120092034-c85f5980-c118-11eb-9719-b500503aabc3.PNG)
 
 
@@ -17,9 +17,9 @@
 
 
 ##### Finally, this project made through using:
-Asp.net core web app (mvc) 
-React  library
-Google map api 
+* Asp.net core web app (mvc) 
+* React  library
+* Google map api 
 
 
 
