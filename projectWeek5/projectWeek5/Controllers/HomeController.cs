@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using projectWeek5.Models;
 using System;
@@ -24,6 +24,10 @@ namespace projectWeek5.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult AboutUs()
         {
             return View();
         }
