@@ -1,0 +1,63 @@
+﻿
+@{
+    var allUsers = (List<User>)ViewData["Users"];
+}
+
+<div style="height:350px; z-index:-1">
+    <div class="card bg-dark text-white" style="position:absolute; top: 23%; left: 48%; transform: translate(-50%, -50%);border:hidden">
+        <img src="https://img.freepik.com/free-photo/large-group-figurines-people-yellow-background-social-survey-public-opinion_72572-1927.jpg?size=626&ext=jpg" class="card-img" alt="..." style="width:750px;height:350px;" />
+        <div class="card-img-overlay">
+        </div>
+    </div>
+    <div style=" height: 100px;
+        position: absolute;
+        top: 18%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+    ">
+        <h1 style="vertical-align: middle;">List of all Cotumers</h1>
+    </div>
+</div>
+
+
+<br />
+<br />
+
+<table class="table table-hover">
+    <thead style="background-color: gold; color: white">
+        <tr>
+            <th width="400px">
+                Id
+            </th>
+            <th width="400px">
+                Full name
+            </th>
+
+            <th width="400px">
+                Info
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in allUsers)
+        {
+            <tr style="align-items:center">
+                <td style="vertical-align: middle;">
+                    @p.Id
+                </td>
+                <td style="vertical-align: middle;">
+                    @p.FullName
+                </td>
+
+                <td style="vertical-align: middle;">
+                    <button type="button" class="btn btn-warning" style="background-color:lightgoldenrodyellow;">
+                        <a style=" color: darkgoldenrod" href="/Users/UserDetails/@p.Id">
+                            Show Details
+                        </a>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

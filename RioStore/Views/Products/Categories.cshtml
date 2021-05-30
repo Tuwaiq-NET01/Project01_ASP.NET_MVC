@@ -1,0 +1,33 @@
+﻿@{
+    var AllCategories = (dynamic)ViewData["AllCategories"];
+    List<string> CategoriesImage = new List<string>() {
+                   @*"https://media.extra.com/s/aurora/100075452_800/Canon-5MP-Zoemini-C-Instant-Camera-PrinterBumble-Bee-Yellow?locale=en-GB,en-*,*",*@
+                   "https://thumbs.dreamstime.com/b/professional-slr-camera-yellow-background-digital-electronics-professional-slr-camera-yellow-background-digital-196443564.jpg",
+                    "https://image.freepik.com/free-photo/gold-jewelry-yellow-background_96696-1610.jpg",
+                   "https://image.freepik.com/free-photo/men-fashion-clothing-set-accessories-isolated-yellow-background-business-man-clothes-concept_107612-316.jpg",
+                   "https://image.freepik.com/free-photo/fashionable-women-s-hat-bag-shoes-yellow-background-fashionable-clothes-accessories-women-flat-lay_94064-3292.jpg",
+                   };
+}
+
+<br />
+<br />
+
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+    @for (int i = 0; i < AllCategories.Count; i++)
+    {
+
+    <div class="row no-gutters bg-light position-relative" style="align-items:center">
+
+        <img src=@CategoriesImage[i] class="card-img" alt="..." style="width:250px; height:200px">
+        <div class="card-img-overlay" style="align-content:center;  vertical-align: middle" ;>
+
+         <h3 class="mt-0" style="margin-top:100px">@AllCategories[i]</h3>
+
+
+
+            <a href="/Products/Category/?category=@AllCategories[i]" class="stretched-link"></a>
+        </div>
+    </div>
+    }
+</div>

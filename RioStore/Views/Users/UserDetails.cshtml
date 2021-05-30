@@ -1,0 +1,40 @@
+﻿@{
+    var queriedUser = (User)ViewData["UserDetails"];
+    Layout = "_LayoutForDetails";
+}
+
+<div class="card mb-3" style="max-width: 550px; position:absolute ; top: 50%; left: 50%; transform: translate(-50%, -50%);border:hidden">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img style="border-radius: 12px;width:235px;height:260px" src="https://i.pinimg.com/originals/77/3e/4a/773e4a6b450dea859d9c0b9d45030ae6.png" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body" style="text-align: center; margin-left: 28px;">
+                <h3 class="card-title">@queriedUser.FullName</h3>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Userame: </span>
+                    @queriedUser.Username
+                </p>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Email: </span>
+                    @queriedUser.Email
+                </p>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Password: </span>
+                    @queriedUser.Password
+                </p>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Phone #: </span>
+                    @queriedUser.Phone
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <span style="position:absolute">
+            <button href type="button" onclick="location.href='/Users';"  class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </span>
+</div>
+

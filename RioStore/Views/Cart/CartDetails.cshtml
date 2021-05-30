@@ -1,0 +1,57 @@
+﻿
+@{
+    var Cart = (Cart)ViewData["CartById"];
+    Layout = "_LayoutForDetails"; // to use another layout ,other than the defult, that has been created.
+
+}
+<br />
+<br />
+<div class="card mb-3" style="max-width: 700px; position: center; margin:0 auto; border:hidden">
+    <div class="row g-0">
+        <div class="col-md-4" style="position: relative;">
+            <img style=" border-radius: 12px;
+        width: 235px;
+        height: 250px;
+        margin: 0;
+        margin-left:10px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);" src="https://ezellohub.com/wp-content/uploads/2020/02/y2.jpg" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body" style="text-align: center; margin-left: 28px;">
+                <h5 class="card-title">The Details of Cart Id# @Cart.Id</h5>
+                <p class="card-text">
+                    It has been ordered by the user Id#   <span style="font-weight: bold;"> @Cart.UserId  </span>.
+                </p>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Time: </span>
+                    @Cart.Date
+                </p>
+                <p class="card-text">
+                    <span style="font-weight: bold;">With The Foloowing order: </span>
+                </p>
+                @foreach (var item in Cart.Products)
+                {
+                    <p class="card-text">
+                        <span style="font-weight: bold;"> - Item Id: </span>
+                        @item.productId
+                    <span style="font-weight: bold;"> | quantity: </span>
+                        @item.quantity
+                    </p>
+                }
+
+            </div>
+        </div>
+
+    </div>
+    <div style="position:absolute; margin-left:10px;">
+        <button type="button" class="close" aria-label="Close">
+            <a href="/Cart" class="stretched-link">
+
+            </a>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>

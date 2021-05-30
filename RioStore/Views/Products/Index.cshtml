@@ -1,0 +1,55 @@
+﻿@{
+    var queriedProduct = (Product)ViewData["Product"];
+    Layout = "_LayoutForDetails"; // to use another layout ,other than the defult, that has been created.
+}
+@*<h4> Your Query result: </h4>
+    <h6> The product u searched for is : @queriedProduct.Name and its id is @queriedProduct.Id , while the price is @queriedProduct.Price :</h6>
+    <img width="350px" height="350px" src="@queriedProduct.Image" />*@
+
+<br />
+<br />
+<div class="card mb-3" style="max-width: 700px; position: center; margin:0 auto; border:hidden">
+    <div class="row g-0">
+        <div class="col-md-4"  style="position: relative;">
+            <img style="        border-radius: 12px;
+        width: 235px;
+        height: 250px;
+        margin: 0;
+        margin-left:10px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+" src=@queriedProduct.Image alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body" style="text-align: center; margin-left: 28px;">
+                <h5 class="card-title">@queriedProduct.Title</h5>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Category: </span>
+                    @queriedProduct.Category
+                </p>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Description: </span>
+                    @queriedProduct.Description
+                </p>
+                <p class="card-text">
+                    <span style="font-weight: bold;">Price: </span>
+                    @queriedProduct.Price $
+                </p>
+                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+                <button type="button" class="btn btn-outline-primary">Buy Now</button>
+                @*<button type="button" class="btn btn-lg  btn-outline-primary" data-toggle="popover" title="Sorry!" data-content="The item is not available right now. Check back soon!">Buy Now</button>*@
+            </div>
+        </div>
+
+    </div>
+    <div style="position:absolute; margin-left:10px;">
+        <button type="button" class="close" aria-label="Close">
+            <a href="/Products/Category/?category=@queriedProduct.Category" class="stretched-link">
+
+            </a>
+        <span aria-hidden="true">&times;</span>    
+        </button>
+    </div>
+</div>

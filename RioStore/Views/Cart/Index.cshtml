@@ -1,0 +1,83 @@
+﻿
+@{
+    var allCarts = (List<Cart>)ViewData["Carts"];
+}
+
+
+
+
+<div style="height:350px; z-index:-1">
+    <div class="card bg-dark text-white" style="position:absolute; top: 23%; left: 48%; transform: translate(-50%, -50%);border:hidden">
+        <img src="https://image.freepik.com/free-photo/empty-shopping-cart-near-shopping-bag-with-travel-card-against-yellow-background_23-2147968751.jpg" class="card-img" alt="..." style="width:770px;height:350px;" />
+        <div class="card-img-overlay">
+        </div>
+    </div>
+    <div style="        border-radius: 35px;
+        background-color: rgba(255,255,255,0.6);
+        width: 400px;
+        height: 100px;
+        position: absolute;
+        top: 20%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-left: 28px;
+        align-items: center
+    ">
+        <h1 style="vertical-align: middle; margin-top:20px">List of all Carts</h1>
+    </div>
+</div>
+
+<br />
+<form action="/Cart/User" method="get">
+    <div class="form-group">
+        <label for="formGroupExampleInput">Search</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" name="id" placeholder="Search carts by User Id ...">
+    </div>
+    @*<input type="submit" value="Submit">*@
+</form>
+<br />
+
+<table class="table table-hover">
+    <thead style="background-color: gold; color: white">
+        <tr>
+            <th width="400px">
+                Id
+            </th>
+            <th width="400px">
+                User Id
+            </th>
+
+            <th width="400px">
+                Date
+            </th>
+            <th width="400px">
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in allCarts)
+        {
+            <tr style="align-items:center">
+                <td style="vertical-align: middle;">
+                    @p.Id
+                </td>
+                <td style="vertical-align: middle;">
+                    @p.UserId
+                </td>
+
+                <td style="vertical-align: middle;">
+                    @p.Date
+                </td>
+                <td style="vertical-align: middle;">
+                    <button type="button" class="btn btn-warning" style="background-color:lightgoldenrodyellow;">
+                        <a style=" color:darkgoldenrod" href="/Cart/CartDetails/@p.Id">
+                            Show Details
+                        </a>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
