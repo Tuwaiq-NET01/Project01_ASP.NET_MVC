@@ -34,14 +34,14 @@ namespace HNews.Services
             }
         }
 
-        public async Task<IEnumerable<PostModel>> GetTopPosts()
+        public async Task<IEnumerable<PostModel>> GetPosts(string postsType)
         {
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(BaseUrl);
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                var response = await client.GetAsync($"topstories.json?");
+                var response = await client.GetAsync($"{postsType}stories.json?");
 
                 if (!response.IsSuccessStatusCode) return null;
                 var json = await response.Content.ReadAsStringAsync();

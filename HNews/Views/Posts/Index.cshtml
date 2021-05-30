@@ -38,7 +38,7 @@
       {
         <div class="media my-4">
           <div class="media-body">
-            <h6><a class="text-reset mt-0">@c.Author</a></h6>
+            <h6><a class="text-reset mt-0" href="/users?username=@c.Author">@c.Author</a></h6>
             <p class="fs-7 fw-light">@c.GetRelativePostDate()</p>
             @Html.Raw(@c.Content)
           </div>

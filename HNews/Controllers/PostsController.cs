@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using HNews.Models;
 using HNews.Services;
@@ -28,11 +29,21 @@ namespace HNews.Controllers
             return View();
         }
 
-        public async Task<ActionResult> TopPosts()
+        public async Task<ActionResult> Top()
         {
-            var topPosts = await _postsService.GetTopPosts();
+            var topPosts = await _postsService.GetPosts("top");
             if (topPosts == null) return Content("An error has occured");
-            ViewData["TopPosts"] = topPosts;
+            ViewData["PostsList"] = topPosts;
+            ViewData["Title"] = "Top posts";
+            return View();
+        }
+
+        public async Task<ActionResult> New()
+        {
+            var newPosts = await _postsService.GetPosts("new");
+            if (newPosts == null) return Content("An error has occured");
+            ViewData["NewPosts"] = newPosts;
+            ViewData["Title"] = "Newest posts";
             return View();
         }
     }

@@ -19,6 +19,7 @@ namespace HNews.Controllers
             var user = await _usersService.GetUserProfile(username);
             if (user == null) return Content("An error has occured");
             ViewData["User"] = user;
+            ViewData["Title"] = user.Username;
             return View();
         }
     }

@@ -12,29 +12,25 @@ namespace HNews.Models
 
         [JsonProperty("by")] public string Author { get; set; }
 
-        //One of "job", "story", "comment", "poll", or "pollopt".
         [JsonProperty("type")] public string PostType { get; set; }
-
-        // html
+        
         [JsonProperty("title")] public string Title { get; set; }
         
-        // html
-        [JsonProperty("text")] 
-        public string Content { get; set; }
+        [JsonProperty("text")] public string Content { get; set; }
 
         [JsonProperty("url")] public string Url { get; set; }
+        
         [JsonProperty("score")] public int Score { get; set; }
+        
         [JsonProperty("descendants")] public int CommentsCount { get; set; }
 
-        public string IconUrl
-        {
-            get { return "https://www.google.com/s2/favicons?domain=" + Url;}
-        }
+        public string IconUrl => Url != null ? "https://www.google.com/s2/favicons?domain=" + Url : "";
+        
         [JsonProperty("kids")] public List<int> CommentsIds { get; set; }
         
         public IEnumerable<PostModel> Comments { get; set; }
+        
         public string WebsiteName => new Uri(Url).Host.Replace("www.", "");
-
 
         public string GetRelativePostDate()
         {
@@ -67,6 +63,5 @@ namespace HNews.Models
 
             return "";
         }
-        
     }
 }

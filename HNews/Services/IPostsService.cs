@@ -7,6 +7,6 @@ namespace HNews.Services
     public interface IPostsService
     {
         Task<PostModel> GetPostById(int id, bool withComments);
-        Task<IEnumerable<PostModel>> GetTopPosts();
+        Task<IEnumerable<PostModel>> GetPosts(string postsType);
     }
 }
