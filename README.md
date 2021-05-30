@@ -1,7 +1,7 @@
 # Project01_ASP.NET_MVC
 
 ## Top Sites in  Saudi Arabia 
-### TThis webpage shows the most popular places recommended to any tourist who's planning to visit KSA. 
+### This webpage shows the most popular places recommended to any tourist who's planning to visit KSA. 
 
 
 #### There is a map to ease the search, for anyone interested to see these sites through the map.
