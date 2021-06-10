@@ -1,0 +1,115 @@
+﻿<Properties StartupConfiguration="{37E7F8C9-8300-4077-9822-094CB8523864}|Default">
+  <MonoDevelop.Ide.ItemProperties.NadaMVC PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NadaMVC" expanded="True" selected="True">
+            <Node name="NadaMVC" expanded="True" selected="True">
+              <Node name="ConnectedServicesFolder" selected="True" />
+              <Node name="Dependencies" expanded="True" selected="True">
+                <Node name="FrameworkReferences" expanded="True" selected="True">
+                  <Node name="Microsoft.AspNetCore.App" selected="True" />
+                  <Node name="Microsoft.NETCore.App" selected="True" />
+                </Node>
+                <Node name="PackageDependencies" expanded="True" selected="True">
+                  <Node name="bootstrap" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" selected="True">
+                <Node name="BookController.cs" selected="True" />
+                <Node name="BooksSellerController.cs" selected="True" />
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" selected="True">
+                <Node name="BookModel.cs" selected="True" />
+                <Node name="BooksSellerModel.cs" selected="True" />
+                <Node name="ErrorViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" selected="True">
+                <Node name="launchSettings.json" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True" selected="True">
+                <Node name="Book" selected="True" />
+                <Node name="BooksSeller" selected="True" />
+                <Node name="Home" expanded="True" selected="True">
+                  <Node name="Index.cshtml" selected="True" />
+                  <Node name="Privacy.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" selected="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                  <Node name="_LayoutNer.cshtml" selected="True" />
+                  <Node name="_ValidationScriptsPartial.cshtml" selected="True" />
+                  <Node name="Error.cshtml" selected="True" />
+                </Node>
+                <Node name="_ViewImports.cshtml" selected="True" />
+                <Node name="_ViewStart.cshtml" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" selected="True">
+                <Node name="css" expanded="True" selected="True">
+                  <Node name="bootstrap.css" selected="True" />
+                  <Node name="bootstrap-grid.css" selected="True" />
+                  <Node name="bootstrap-reboot.css" selected="True" />
+                  <Node name="bootstrap-utilities.css" selected="True" />
+                  <Node name="site.css" selected="True" />
+                </Node>
+                <Node name="js" expanded="True" selected="True">
+                  <Node name="bootstrap.js" expanded="True" selected="True">
+                    <Node name="bootstrap.bundle.js" expanded="True" selected="True">
+                      <Node name="bootstrap.bundle.js.map" selected="True" />
+                      <Node name="bootstrap.bundle.min.js" expanded="True" selected="True">
+                        <Node name="bootstrap.bundle.min.js.map" selected="True" />
+                      </Node>
+                    </Node>
+                    <Node name="bootstrap.esm.js" selected="True" />
+                    <Node name="bootstrap.js.map" selected="True" />
+                    <Node name="bootstrap.min.js" selected="True" />
+                  </Node>
+                  <Node name="site.js" selected="True" />
+                </Node>
+                <Node name="lib" expanded="True" selected="True">
+                  <Node name="bootstrap" expanded="True" selected="True">
+                    <Node name="dist" expanded="True" selected="True">
+                      <Node name="css" expanded="True" selected="True">
+                        <Node name="bootstrap.css" selected="True" />
+                        <Node name="bootstrap-grid.css" selected="True" />
+                        <Node name="bootstrap-reboot.css" selected="True" />
+                      </Node>
+                      <Node name="js" expanded="True" selected="True">
+                        <Node name="bootstrap.js" expanded="True" selected="True">
+                          <Node name="bootstrap.bundle.js" expanded="True" selected="True">
+                            <Node name="bootstrap.bundle.js.map" selected="True" />
+                            <Node name="bootstrap.bundle.min.js" selected="True" />
+                          </Node>
+                          <Node name="bootstrap.js.map" selected="True" />
+                          <Node name="bootstrap.min.js" selected="True" />
+                        </Node>
+                        <Node name="bootstrap-2.css" selected="True" />
+                      </Node>
+                    </Node>
+                    <Node name="LICENSE" selected="True" />
+                  </Node>
+                  <Node name="jquery" selected="True" />
+                  <Node name="jquery-validation" selected="True" />
+                  <Node name="jquery-validation-unobtrusive" selected="True" />
+                </Node>
+                <Node name="favicon.ico" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" selected="True">
+                <Node name="appsettings.Development.json" selected="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
