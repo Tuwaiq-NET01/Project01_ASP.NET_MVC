@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KJVM9TjEbwrs8N3lhmn3hCobb80sxtrl553jEizAOT9LSxxBe9MSrpjX7G5o26ZtQPTL7g+e0qqo5++joO1Osw==",
+  "success": true,
+  "projectFilePath": "/Users/nadaalotaibi/Projects/NadaMVC/NadaMVC/NadaMVC.csproj",
+  "expectedPackageFiles": [
+    "/Users/nadaalotaibi/.nuget/packages/bootstrap/5.0.1/bootstrap.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
