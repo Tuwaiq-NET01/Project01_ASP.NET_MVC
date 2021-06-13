@@ -50,9 +50,7 @@ namespace NadaMVC.Controllers
             }
 
 
-            //ViewData["Name"] = "BMW";
-            //ViewData["Model"] = "2020";
-            //ViewData["Color"] = "Black";
+        
 
         }
 
